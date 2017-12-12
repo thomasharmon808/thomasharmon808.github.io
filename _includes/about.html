@@ -1,30 +1,54 @@
  <!-- About Section -->
-<section class="success" id="about">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>About</h2>
-                <hr class="star-light">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-1 col-md-offset-1">
-                <img class="img-circle" src="img/profile.png" width="300" height="300">
-            </div>
-            <div class="col-md-7 col-md-offset-2">
-                <p>(change formatting of about heading, add picture of myself, links to resume, linkedin, contact info, and github)</p>
-                <p>I am a third year student at Northeastern University studying Computer Engineering and Computer Science, with my graduation expected in May 2020. I am an avid learner and not afraid to questions things I do not understand. Most of all, I love working with people.</p>
-                <p>I am currently co-oping at State Street in their Architecture and Infrastructure group, as well as at RIVeR, a robotics research lab at Northeastern. My skills include xxxx xxxx xxxx and xxx. I have experience in xxxx and xxxx.</p>
-                <p>When I'm not working, I love to blow glass, surf, explore the general outdoors, and meet new people from different cultures than my own.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="intro-text">
-                <div class="col-lg-12 col-md-offset-1">
-                    <span class="name">{{ site.title }}</span>
-                    <span class="skills">{{ site.skills }}</span>
+    <section class="success" id="about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-1 col-md-offset-1">
+                    <img class="img-circle" src="img/profile.png" width="300" height="300">
+                </div>
+                <div class="col-md-7 col-md-offset-2">
+                    <p>(change formatting of about heading, add picture of myself, links to resume, linkedin, contact info, and github)</p>
+                    <p>I am a third year student at Northeastern University studying Computer Engineering and Computer Science, with my graduation expected in May 2020. I am an avid learner and not afraid to questions things I do not understand. Most of all, I love working with people.</p>
+                    <p>I am currently co-oping at State Street in their Architecture and Infrastructure group, as well as at RIVeR, a robotics research lab at Northeastern. My skills include xxxx xxxx xxxx and xxx. I have experience in xxxx and xxxx.</p>
+                    <p>When I'm not working, I love to blow glass, surf, explore the general outdoors, and meet new people from different cultures than my own.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="intro-text">
+                    <div class="col-lg-12 col-md-offset-1">
+                        <span class="name">{{ site.title }}</span>
+                        <span class="skills">{{ site.skills }}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>{{ site.footer.location }}</h3>
+                        <p>
+                            {% for adress in site.address %}
+                                {{ adress.line }} <br>
+                            {% endfor %}
+                        </p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>{{ site.footer.social }}</h3>
+                        <ul class="list-inline">
+                            {% for network in site.social %}
+                            <li>
+                                <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>{{ site.footer.credits }}</h3>
+                        <p>{{ site.credits }}</p>
+                    </div>
+                </div>
         </div>
-    </div>
-</section>
+    </section>
