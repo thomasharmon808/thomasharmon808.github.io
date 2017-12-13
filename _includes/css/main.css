@@ -80,13 +80,14 @@ hr.star-primary:after {
 }
 
 header {
-    text-align: center;
+    position: relative;
+    top: 35%;
     color: #fff;
     background: #{{ site.color.primary }};
 }
 
 header .container {
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 50px;
 }
 
