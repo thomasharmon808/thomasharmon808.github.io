@@ -19,6 +19,11 @@ social:
   - title: pdf
     url:
 
+
+# Webmaster settings
+google_verify:
+bing_verify:
+
 # Copyright
 credits: Copyright Thomas Harmon 2017 
 
@@ -31,7 +36,9 @@ sass:
         - _sass
         - node_modules
 
-exclude: []
+# Jekyll 3.3 default behavior automatically excludes node_modules
+exclude:
+  -node_modules
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

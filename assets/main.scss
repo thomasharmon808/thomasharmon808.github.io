@@ -1,9 +1,7 @@
 ---
+
 ---
 
 @import "variables";
-@import "bootstrap/scss/bootstrap";
-
-.content {
-  font-size: $custom-font-size;
-}
+@import "navbar";
+@import "footer";

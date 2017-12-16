@@ -1,3 +1,4 @@
+/* Fonts */
 $custom-font-size: 20px;
 
 $font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
@@ -7,5 +8,7 @@ $font-family-base:       $font-family-monospace;
 
 $font-size-base: 3rem !default; // Assumes the browser default, typically `16px`
 
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
+
+/* Colors */
+$dark-gray: #2f2f2f;
+$white: #FFFFFF;
