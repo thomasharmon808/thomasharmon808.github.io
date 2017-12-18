@@ -5,6 +5,5 @@ subtitle: "A bash implementation that supports piping, redirects, process manage
 date:   2017-10-16 11:14:44 -0500
 number: 1
 categories: projects
-url: /nush.html
 ---
 For this project I implemented a custom bash terminal that supported piping, redirects, process management, and other operators. It had a tokenizer that would parse the commands and operate on them recursively. It uses a syntax parse tree to determine the order of operations.

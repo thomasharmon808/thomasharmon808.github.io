@@ -5,7 +5,6 @@ subtitle: "A filesystem implementation using the FUSE API featuring nested direc
 date:   2017-12-12 11:14:44 -0500
 number: 2
 categories: projects
-url: /nufs.html
 ---
 Authors: Thomas Harmon and Andrew Tu
 
