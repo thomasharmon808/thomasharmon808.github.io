@@ -7,7 +7,6 @@ number: 2
 categories: projects
 url: /nufs.html
 ---
-# Northeastern University File System (NUFS)
 Authors: Thomas Harmon and Andrew Tu
 
 ## NUFS
