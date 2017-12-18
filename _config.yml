@@ -31,16 +31,5 @@ credits: Copyright Thomas Harmon 2017
 markdown: kramdown
 permalink: pretty
 
-# Jekyll 3.3 default behavior automatically excludes node_modules
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Exclude the following from Jekyll processing when building _site
+exclude: [ Gemfile, Gemfile.lock, yarn.lock, node_modules, package.json ]

@@ -1,3 +1,54 @@
 ---
-layout: home
+layout: default
 ---
+<!-- Home         -->
+<div id="home" class="jumbotron jumbotron-fluid">
+	<div class="container text-white">
+		<h1>{{ site.author }}</h1>
+		<h3>Student at Northeastern University</h3>
+	</div>
+</div>
+<!-- About        -->
+<div id="about" class="container-fluid text-white pt-3">
+	<div class="row">
+		<div class="col pl-5">
+			<h2>About</h2>
+			<hr>
+		</div>
+	</div>
+	<div class="row align-items-center pt-1">
+		<div class="col-md-2 offset-sm-1 text-center">
+			<img src="./assets/images/profile.png" class="img-fluid rounded-circle" alt="profile not found">
+		</div>
+		<div class="col-md-7 offset-sm-1">
+            <p>I am a third year student at Northeastern University studying Computer Engineering and Computer Science, with my graduation expected in May 2020. I am an avid learner and not afraid to questions things I do not understand.</p>
+            <p>I am currently co-oping at State Street in their Architecture and Infrastructure group, as well as at RIVeR, a robotics research lab at Northeastern. My skills include xxxx xxxx xxxx and xxx. I have experience in xxxx and xxxx. Most of all, I love working with people.</p>
+            <p>When I'm not working, I love to blow glass, surf, explore the general outdoors, and meet new people from different cultures than my own.</p>
+        </div>
+	</div>
+	<div class="row pt-2">
+        <div class="col-md-2 offset-sm-1 text-center">
+            <p>{{ site.title }}</p>
+        </div>
+    </div>
+    <div class="row pt-2">
+        <div class="col-md-4 offset-sm-1 text-center">
+            <div class="center-block">
+                <ul class="list-inline">
+                    {% for network in site.social %}
+                    <li>
+                    	<a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Projects     -->
+<!-- use bootstrap cards maybe? -->
+<!-- Publications -->
+<!-- Awards       -->
+<!-- Press        -->
+
