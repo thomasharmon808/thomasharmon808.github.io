@@ -1,3 +1,12 @@
+---
+layout: post
+title:  "NUFS"
+subtitle: "A filesystem implementation using the FUSE API featuring nested directories, hard links, large files, and meta data."
+date:   2017-12-12 11:14:44 -0500
+number: 2
+categories: projects
+url: /nufs.html
+---
 # Northeastern University File System (NUFS)
 Authors: Thomas Harmon and Andrew Tu
 

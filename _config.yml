@@ -5,7 +5,7 @@ email: tom@harmon.tech
 description: A website documenting my projects, experience, and passions.
 keywords: "Thomas Harmon, java, developer, web, C++, C, full stack, awesome"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: harmon.tech
 
 # Info
 skills: "Full-Stack Developer - Amazing Person"
@@ -19,6 +19,8 @@ social:
   - title: pdf
     url: http://google.com
 
+
+permalink: /:title.html
 
 # Webmaster settings
 google_verify:
