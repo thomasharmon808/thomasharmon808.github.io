@@ -31,14 +31,7 @@ credits: Copyright Thomas Harmon 2017
 markdown: kramdown
 permalink: pretty
 
-sass:
-    load_paths:
-        - _sass
-        - node_modules
-
 # Jekyll 3.3 default behavior automatically excludes node_modules
-exclude:
-  -node_modules
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

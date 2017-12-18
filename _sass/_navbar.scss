@@ -1,13 +1,16 @@
-.navbar {
-    > a:hover {
-		color: $hover-color !important;
+#mainNav {
+	background-color: $dark-gray;
+	> a:hover {
+		color: $link-hover-color !important;
 	}
 
-    .navbar-nav {
-		> li.nav-item {
-			> a:hover {
-				color: $hover-color !important;
-			}
-		}
+	.navbar-brand {
+		font-weight: 700;
+		font-size: 1.5em;
+		padding-left: $navxspacer;
+	}
+
+	.navbar-nav {
+		padding-right: $navxspacer;
 	}
 }

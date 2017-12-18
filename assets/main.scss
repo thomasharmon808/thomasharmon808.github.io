@@ -1,7 +1,11 @@
 ---
-
 ---
 
+/* My custom CSS */
 @import "variables";
+@import "bootstrap-overrides";
 @import "navbar";
 @import "footer";
+
+/* Bootstrap */
+@import "../node_modules/bootstrap/scss/bootstrap";
