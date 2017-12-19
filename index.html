@@ -24,7 +24,7 @@ layout: default
 		<div class="col-md-7 offset-sm-1">
             <p>I am a third year student at Northeastern University studying Computer Engineering and Computer Science, with my graduation expected in May 2020. I am an avid learner and not afraid to questions things I do not understand.</p>
             <p>I am currently co-oping at State Street in their Architecture and Infrastructure group, as well as at RIVeR, a robotics research lab at Northeastern. My skills include xxxx xxxx xxxx and xxx. I have experience in xxxx and xxxx. Most of all, I love working with people.</p>
-            <p>When I'm not working, I love to blow glass, surf, explore the general outdoors, and meet new people from different cultures than my own.</p>
+            <p>When I'm not working, I love to blow glass, surf, explore the outdoors, and meet new people from different cultures than my own.</p>
         </div>
 	</div>
 	<div class="row pt-2">
@@ -52,11 +52,11 @@ layout: default
 			<hr>
 		</div>
 	</div>
-	<div class="d-flex row flex-wrap pt-3">
-		<div class="card-deck px-5">
+	<div class="d-flex row flex-wrap justify-content-around p-3">
+		<div class="card-deck">
 			{% for post in site.posts %}
-			<div class="card" style="width: 20rem;">
-				<img class="card-img-top" src="./assets/images/posts/post{{ post.number }}.png" width="" height="" alt="post {{ post.number }}">
+			<div class="card" style="width: 23rem;">
+				<img class="card-img-top" src="./assets/images/posts/post{{ post.number }}.png" alt="post {{ post.number }}">
 				<div class="card-body">
 			    	<h4 class="card-title">{{ post.title }}</h4>
 			    	<p class="card-text">{{ post.subtitle }}</p>
@@ -66,6 +66,7 @@ layout: default
     			</div>
 			</div>
 	        {% endfor %}
+	    </div>
 	    </div>
 	</div>
 </div>
