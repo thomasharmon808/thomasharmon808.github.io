@@ -85,3 +85,6 @@ directory artificially, and only limiting it by space. This would take a lot
 more work to deal with fragmentation and a decent rework of our directory work,
 but would be a nice addition. Fortunately, this wouldn't be too big of an
 issue for most people as 70 files is a lot to have in a single folder.
+
+
+Thanks for reading about my NUFS project! You can find the source code at [GitHub](https://github.com/thomasharmon808/ComputerSystems/tree/master/nufs).
