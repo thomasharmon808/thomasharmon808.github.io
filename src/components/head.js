@@ -7,25 +7,34 @@ import { appleIcon57x57, appleIcon60x60, appleIcon72x72, appleIcon76x76, appleIc
 androidIcon192x192, favicon32x32, favicon96x96, favicon16x16, msIcon144x144 }
 from '@images/favicons/';
 
-const Head = ({ metadata }) => (
+const Head = ( ) => (
   <Helmet>
     <html lang={config.siteLanguage} prefix="og: http://ogp.me/ns#" />
-		// react helmet head attributes
     <title itemProp="name" lang={config.siteLanguage}>
-      {metadata.title}
+      {config.siteTitle}
     </title>
     <link rel="shortcut icon" href={favicon} />
     <meta name="description" content={config.siteDescription} />
     <meta name="keywords" content={config.siteKeywords} />
+    {/*
+    TODO:
+      what about these attributes
+      body attribute:
+      <body className="root" />
+      base element attribute:
+      <base target="_blank" href={config.siteUrl} />
+
+
 		// TODO:google-site-verification
     //<meta name="google-site-verification" content={config.googleVerification} />
 		// FB Open Graph https://ogp.me
-		// Open Graph Required Properties:
+    // Open Graph Required Properties:
+    */}
     <meta property="og:title" content={config.siteTitle} />
     <meta property="og:type" content="website" />
     <meta property="og:image" content={`${config.siteUrl}${ogImage}`} />
     <meta property="og:url" content={config.siteUrl} />
-		// Open Graph Optional Properties
+
 		<meta property="og:description" content={config.siteDescription} />
     <meta property="og:site_name" content={config.siteTitle} />
     <meta property="og:image:width" content="400" />
@@ -35,7 +44,7 @@ const Head = ({ metadata }) => (
     <meta itemProp="name" content={config.siteTitle} />
     <meta itemProp="description" content={config.siteDescription} />
     <meta itemProp="image" content={`${config.siteUrl}${ogImage}`} />
-		// favicon images
+
     <link rel="apple-touch-icon" sizes="57x57" href={appleIcon57x57} />
     <link rel="apple-touch-icon" sizes="60x60" href={appleIcon60x60} />
     <link rel="apple-touch-icon" sizes="72x72" href={appleIcon72x72} />

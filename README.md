@@ -94,14 +94,4 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
-## High level TODO's
-
-1.  **Use templates to programatically generate new pages for projects**: https://www.gatsbyjs.org/docs/building-with-components/#page-template-components
-
-2.  **add a manifest file** https://www.gatsbyjs.org/docs/add-a-manifest-file/
-
-3.  **add offline support** https://www.gatsbyjs.org/docs/add-offline-support-with-a-service-worker/#add-offline-support-with-a-service-worker
-
-4.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-
 <!-- AUTO-GENERATED-CONTENT:END -->
