@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: 'Thomas Harmon | Software Engineer',
+  siteTitle: 'Harmon',
   siteDescription:
     'Thomas Harmon is a software engineer in Boston, MA who carries a broad set of skills, ranging from electrical and computer engineering, data science, machine learning, to full stack stoftware development.',
   siteKeywords:
@@ -13,13 +13,7 @@ module.exports = {
   github: 'https://github.com/thomasharmon808/',
   twitterHandle: '@thomasharmon808',
 
-gunmetalGray: '#2C3531',
-darkGreen: '#05231B',
-genoaBlue: '#116466',
-electricBlue: '#66FCF1',
-tan: '#FFCB9A',
-peachOrange: '#D9B08C',
-platinum: '#D1E8E2',
+  navbarHeight: '75px',
 
   socialMedia: [
     {

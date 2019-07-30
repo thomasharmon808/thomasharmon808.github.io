@@ -11,6 +11,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,8 +26,8 @@ module.exports = {
         name: config.name,
         short_name: config.name,
         start_url: `/`,
-        background_color: config.darkGreen,
-        theme_color: config.genoaBlue,
+        background_color: '#116466',
+        theme_color: '#66FCF1',
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
