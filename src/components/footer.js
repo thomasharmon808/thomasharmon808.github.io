@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react"
+import styled from "styled-components"
 
-import { rem } from '@utils';
+import { rem } from "@utils"
 
 const Wrapper = styled.div`
   min-height: ${rem(50)};
@@ -20,9 +20,12 @@ const FooterLink = styled.a`
 const Footer = () => (
   <Wrapper>
     <p>
-      Built by <FooterLink href="https://github.com/thomasharmon808">Thomas Harmon</FooterLink>
+      Built by{" "}
+      <FooterLink href="https://github.com/thomasharmon808">
+        Thomas Harmon
+      </FooterLink>
     </p>
   </Wrapper>
 )
 
-export default Footer;
+export default Footer

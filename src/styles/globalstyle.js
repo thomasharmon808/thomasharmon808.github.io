@@ -1,7 +1,7 @@
-import { createGlobalStyle } from 'styled-components';
-import theme from './theme';
-import media from './media';
-const { colors, fontSizes, fonts } = theme;
+import { createGlobalStyle } from "styled-components"
+import theme from "./theme"
+import media from "./media"
+const { colors, fontSizes, fonts } = theme
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -149,6 +149,6 @@ const GlobalStyle = createGlobalStyle`
     transition: opacity 1000ms ${theme.easing};
   } */
 
-`;
+`
 
-export default GlobalStyle;
+export default GlobalStyle

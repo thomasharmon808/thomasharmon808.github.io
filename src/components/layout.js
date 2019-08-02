@@ -4,13 +4,13 @@
  *
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
-import React from "react";
-import styled from 'styled-components';
-import PropTypes from "prop-types";
-import 'typeface-ibm-plex-sans';
+import React from "react"
+import styled from "styled-components"
+import PropTypes from "prop-types"
+import "typeface-ibm-plex-sans"
 
-import { Nav, Footer, Head } from '@components';
-import { GlobalStyle } from '@styles';
+import { Nav, Footer, Head } from "@components"
+import { GlobalStyle } from "@styles"
 
 const Wrapper = styled.div`
   display: flex;
@@ -38,20 +38,20 @@ class Layout extends React.PureComponent {
   render() {
     return (
       <div id="root">
-      <Head />
-      <GlobalStyle />
+        <Head />
+        <GlobalStyle />
 
-      <Wrapper>
-        <Nav
-          isMobileNavFolded={this.state.isMobileNavFolded}
-          onMobileNavToggle={this.toggleMobileNav}
-        />
-        {this.props.children}
-        <Footer />
-      </Wrapper>
-       </div>
+        <Wrapper>
+          <Nav
+            isMobileNavFolded={this.state.isMobileNavFolded}
+            onMobileNavToggle={this.toggleMobileNav}
+          />
+          {this.props.children}
+          <Footer />
+        </Wrapper>
+      </div>
     )
-    }
+  }
 }
 
 Layout.propTypes = {

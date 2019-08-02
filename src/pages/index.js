@@ -1,8 +1,8 @@
-import React from "react";
-import styled, { css, createGlobalStyle } from 'styled-components';
+import React from "react"
+import styled, { css, createGlobalStyle } from "styled-components"
 
-import { rem, mobile } from '@utils';
-import { Layout } from "@components";
+import { rem, mobile } from "@utils"
+import { Layout } from "@components"
 
 const Content = styled.div`
   width: ${rem(1024)};
@@ -15,18 +15,19 @@ const Content = styled.div`
   ${mobile(css`
     padding: ${rem(70)} ${rem(20)} ${rem(30)} ${rem(20)};
   `)}
-  ${p => p.hero && css`
-    font-family: sans-serif;
-    width: 75rem;
-  `}
+  ${p =>
+    p.hero &&
+    css`
+      font-family: sans-serif;
+      width: 75rem;
+    `}
 `
-
 
 const IndexPage = () => (
   <Layout>
-      <Content>
-        <h1>Hi People</h1>
-      </Content>
+    <Content>
+      <h1>Hi People</h1>
+    </Content>
   </Layout>
 )
 
