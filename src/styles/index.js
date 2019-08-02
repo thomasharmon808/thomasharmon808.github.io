@@ -1,5 +1,6 @@
 import theme from './theme';
 import media from './media';
+import GlobalStyle from './globalstyle';
 
 // import Header from './Header';
 // import Footer from './Footer';
@@ -13,7 +14,7 @@ import media from './media';
 export {
   theme,
   media,
-
+  GlobalStyle
 	// Header,
 	// Footer,
   // Main,

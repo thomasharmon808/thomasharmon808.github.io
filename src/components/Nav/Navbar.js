@@ -41,7 +41,7 @@ const NormalNavbar = styled.div`
 const StartWrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex;
 `
 
 const EndWrapper = styled.div`
@@ -74,10 +74,9 @@ class NavBar extends React.PureComponent {
             <LogoLink>
               <p>{siteTitle}</p>
             </LogoLink>
-            <NavLinks />
           </StartWrapper>
           <EndWrapper>
-            <Social />
+            <NavLinks />
           </EndWrapper>
         </NormalNavbar>
 

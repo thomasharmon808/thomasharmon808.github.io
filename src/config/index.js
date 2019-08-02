@@ -13,7 +13,7 @@ module.exports = {
   github: 'https://github.com/thomasharmon808/',
   twitterHandle: '@thomasharmon808',
 
-  navbarHeight: '75px',
+  navbarHeight: '69px',
 
   socialMedia: [
     {
