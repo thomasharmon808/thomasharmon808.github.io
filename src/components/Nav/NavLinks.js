@@ -39,8 +39,6 @@ const NavLinks = () => (
     <NavSeparator />
     <NavLink to="#proj">Projects</NavLink>
     <NavSeparator />
-    <NavLink to="#contact">Contact</NavLink>
-    <NavSeparator />
     <NavLink to="resume">Resume</NavLink>
   </Wrapper>
 )

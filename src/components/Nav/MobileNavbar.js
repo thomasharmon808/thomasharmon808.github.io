@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styled, { css } from 'styled-components';
 
 import NavLinks from './NavLinks';
-import Social from './Social';
 import NavSeparator from './NavSeparator';
 import NavButton from './NavButton';
+import LogoLink from './LogoLink';
 
 import { IconHamburger } from '@components/icons';
 import { rem, mobile } from '@utils';
@@ -25,7 +24,7 @@ const Wrapper = styled.div`
 
 const SecondaryMenu = styled.div`
   position: absolute;
-  top: 3.125rem;
+  top: ${rem(navbarHeight)};
   left: 0;
   right: 0;
   ${p => p.open ? css`
@@ -47,27 +46,16 @@ const SecondaryMenu = styled.div`
   color: #868686;
 `
 
-const LogoLink = styled(Link).attrs({
-  to: '/',
-  'aria-label': 'home',
-})`
-  display: inline-block;
-  vertical-align: center;
-  margin-left: 1.25rem;
-  color: currentColor;
-`
-
 const IconWrapper = styled.div`
   transition: transform 0.1s;
   color: white;
-  ${p => p.rotate && css`
-    transform-origin: 50% 55%;
-    transform: rotate(180deg);
-  `}
+  width: 32px;
+  height: 28px;
+  justify-content: center;
 `
 
 const SecondaryMenuItem = styled.div`
-  // padding-right: 1.25rem;
+   padding-right: 1.25rem;
 `
 
 const MobileNavbar = props => {
@@ -79,7 +67,7 @@ const MobileNavbar = props => {
   return (
     <Wrapper>
       <LogoLink>
-        <p>{siteTitle}</p>
+        {siteTitle}
       </LogoLink>
 
       <Wrapper>
@@ -87,7 +75,7 @@ const MobileNavbar = props => {
           onClick={onMobileNavToggle}
           active={!isMobileNavFolded}
         >
-          <IconWrapper rotate={!isMobileNavFolded}>
+          <IconWrapper>
             <IconHamburger />
           </IconWrapper>
         </NavButton>
@@ -97,7 +85,6 @@ const MobileNavbar = props => {
         <NavLinks />
         <NavSeparator />
         <SecondaryMenuItem>
-          <Social />
         </SecondaryMenuItem>
       </SecondaryMenu>
     </Wrapper>

@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import { rem, resetInput } from '@utils';
 import { navbarHeight } from '@config';
@@ -11,10 +11,8 @@ const NavButton = styled.button`
   color: white;
   text-align: center;
   vertical-align: middle;
+  justify-content: center;
   cursor: pointer;
-  ${p => p.active && css`
-    background: rgba(0, 0, 0, 0.07);
-  `}
 `
 
 export default NavButton

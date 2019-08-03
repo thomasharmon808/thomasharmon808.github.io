@@ -1,13 +1,12 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { Link } from 'gatsby';
 
 import { rem, mobile } from '@utils';
 import { navbarHeight, siteTitle } from '@config';
 
 import NavLinks from './NavLinks';
-import Social from './Social';
 import MobileNavbar from './MobileNavbar';
+import LogoLink from './LogoLink';
 
 const Wrapper = styled.nav`
   position: fixed;
@@ -32,7 +31,6 @@ const NormalNavbar = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 ${rem(20)};
-
   ${mobile(css`
     display: none;
   `)}
@@ -50,16 +48,6 @@ const EndWrapper = styled.div`
   justify-content: flex-end;
 `
 
-const LogoLink = styled(Link).attrs({
-    to: '/',
-    'aria-label': 'home',
-  })`
-  display: inline-block;
-  vertical-align: center;
-  margin-right: ${rem(35)};
-  color: currentColor;
-`
-
 class NavBar extends React.PureComponent {
   render() {
     const {
@@ -71,9 +59,7 @@ class NavBar extends React.PureComponent {
       <Wrapper>
         <NormalNavbar>
           <StartWrapper>
-            <LogoLink>
-              <p>{siteTitle}</p>
-            </LogoLink>
+            <LogoLink>{siteTitle}</LogoLink>
           </StartWrapper>
           <EndWrapper>
             <NavLinks />

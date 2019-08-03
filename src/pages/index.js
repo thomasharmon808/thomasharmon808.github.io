@@ -1,5 +1,5 @@
 import React from "react"
-import styled, { css, createGlobalStyle } from "styled-components"
+import styled, { css } from "styled-components"
 
 import { rem, mobile } from "@utils"
 import { Layout } from "@components"
