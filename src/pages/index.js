@@ -2,7 +2,7 @@ import React from "react"
 import styled, { css } from "styled-components"
 
 import { rem, mobile } from "@utils"
-import { Layout } from "@components"
+import { Layout, Hero} from "@components"
 
 const Content = styled.div`
   width: ${rem(1024)};
@@ -26,7 +26,7 @@ const Content = styled.div`
 const IndexPage = () => (
   <Layout>
     <Content>
-      <h1>Hi People</h1>
+      <Hero/>
     </Content>
   </Layout>
 )
