@@ -7,19 +7,18 @@ import NavButton from './NavButton';
 import LogoLink from './LogoLink';
 
 import { IconHamburger } from '@components/icons';
-import { rem, mobile } from '@utils';
+import { rem, media } from '@utils';
 import { navbarHeight, siteTitle } from '@config';
 
 
 const Wrapper = styled.div`
   display: none;
-
-  ${mobile(css`
+  ${media.tablet`
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: ${rem(navbarHeight)};
-  `)}
+  `}
 `
 
 const SecondaryMenu = styled.div`

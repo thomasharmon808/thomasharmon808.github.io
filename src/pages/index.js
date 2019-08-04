@@ -1,7 +1,7 @@
 import React from "react"
 import styled, { css } from "styled-components"
 
-import { rem, mobile } from "@utils"
+import { rem, media } from "@utils"
 import { Layout, Hero} from "@components"
 
 const Content = styled.div`
@@ -12,9 +12,9 @@ const Content = styled.div`
   padding: ${rem(90)} ${rem(40)} ${rem(30)} ${rem(40)};
   box-sizing: border-box;
   transition: transform 150ms ease-out;
-  ${mobile(css`
+  ${media.tablet`
     padding: ${rem(70)} ${rem(20)} ${rem(30)} ${rem(20)};
-  `)}
+  `}
   ${p =>
     p.hero &&
     css`

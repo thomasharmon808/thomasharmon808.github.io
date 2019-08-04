@@ -1,8 +1,8 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import { theme } from '@styles';
-import { rem, mobile } from '@utils';
+import { media } from '@utils';
 
 const { colors } = theme;
 
@@ -27,9 +27,6 @@ const Title = styled.h1`
   margin: 0 0 20px 3px;
   font-weight: normal;
 	font-size: 1em;
-	${mobile(css`
-    font-size: 0.875em;
-  `)};
 `;
 
 const Subtitle = styled.h2`

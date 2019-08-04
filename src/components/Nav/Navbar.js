@@ -1,7 +1,7 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
-import { rem, mobile } from '@utils';
+import { rem, media } from '@utils';
 import { navbarHeight, siteTitle } from '@config';
 
 import NavLinks from './NavLinks';
@@ -31,9 +31,7 @@ const NormalNavbar = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 ${rem(20)};
-  ${mobile(css`
-    display: none;
-  `)}
+  ${media.tablet`display: none;`}
 `
 
 const StartWrapper = styled.div`
