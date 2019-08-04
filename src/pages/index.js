@@ -1,26 +1,22 @@
 import React from "react"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 
 import { rem, media } from "@utils"
 import { Layout, Hero} from "@components"
 
-const Content = styled.div`
-  width: ${rem(1024)};
-  max-width: 100%;
-  flex: 1;
+const Content = styled.main`
+  width: 100%;
+  /* flex: 1; */
   margin: 0 auto;
-  padding: ${rem(90)} ${rem(40)} ${rem(30)} ${rem(40)};
-  box-sizing: border-box;
+  /* counter-reset: section; */
+  padding: 0 ${rem(90)};
   transition: transform 150ms ease-out;
   ${media.tablet`
-    padding: ${rem(70)} ${rem(20)} ${rem(30)} ${rem(20)};
+    padding: 0 ${rem(45)};
   `}
-  ${p =>
-    p.hero &&
-    css`
-      font-family: sans-serif;
-      width: 75rem;
-    `}
+  ${media.phablet`
+    padding: 0 ${rem(22)};
+  `}
 `
 
 const IndexPage = () => (

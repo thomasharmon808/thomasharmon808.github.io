@@ -20,6 +20,7 @@ const NavLink = styled(Link)`
   transition: opacity 0.2s, transform 0.2s;
   cursor: pointer;
   letter-spacing: 0.025rem;
+  font-size: 1.2em;
   color: currentColor;
   &:hover,
   &:focus {

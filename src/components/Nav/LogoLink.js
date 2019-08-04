@@ -9,6 +9,7 @@ const LogoLink = styled(Link).attrs({
   vertical-align: center;
   color: currentColor;
   margin-left: 1.25rem;
+  font-size: 1.2em;
 `
 
 export default LogoLink;

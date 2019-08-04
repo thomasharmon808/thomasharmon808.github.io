@@ -1,21 +1,23 @@
-import IconLogo from './logo';
-import IconGithub from './github';
-import IconLinkedin from './linkedin';
-import IconInstagram from './instagram';
-import IconTwitter from './twitter';
-import IconExternal from './external';
-import IconFork from './fork';
-import IconHamburger from './hamburger';
-import FormattedIcon from './formattedIcon';
+import Github from './github';
+import Linkedin from './linkedin';
+import Instagram from './instagram';
+import Twitter from './twitter';
+import External from './external';
+import Fork from './fork';
+import Hamburger from './hamburger';
+import Email from './email';
+import HollowMoon from './hollowmoon';
+import SolidMoon from './solidmoon';
 
 export {
-  IconLogo,
-  IconGithub,
-  IconLinkedin,
-  IconInstagram,
-  IconTwitter,
-  IconExternal,
-  IconFork,
-  IconHamburger,
-  FormattedIcon
+  Email,
+  External,
+  Fork,
+  Github,
+  Hamburger,
+  HollowMoon,
+  Instagram,
+  Linkedin,
+  Twitter,
+  SolidMoon
 };

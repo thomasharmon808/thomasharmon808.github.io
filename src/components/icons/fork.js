@@ -1,6 +1,6 @@
 import React from 'react';
 
-const IconFork = () => (
+const Fork = () => (
   <svg aria-label="forks" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img">
     <path
       fillRule="evenodd"
@@ -9,4 +9,4 @@ const IconFork = () => (
   </svg>
 );
 
-export default IconFork;
+export default Fork;

@@ -6,7 +6,7 @@ import NavSeparator from './NavSeparator';
 import NavButton from './NavButton';
 import LogoLink from './LogoLink';
 
-import { IconHamburger } from '@components/icons';
+import { Hamburger, SolidMoon } from '@components/icons';
 import { rem, media } from '@utils';
 import { navbarHeight, siteTitle } from '@config';
 
@@ -47,10 +47,18 @@ const SecondaryMenu = styled.div`
 
 const IconWrapper = styled.div`
   transition: transform 0.1s;
+  width: 110px;
   color: white;
-  width: 32px;
-  height: 28px;
   justify-content: center;
+  svg {
+    width: 32px;
+    height: 28px;
+  }
+  svg.SolidMoon {
+    margin-right: 20px;
+    width: 24px;
+    height: 24px;
+  }
 `
 
 const SecondaryMenuItem = styled.div`
@@ -75,7 +83,8 @@ const MobileNavbar = props => {
           active={!isMobileNavFolded}
         >
           <IconWrapper>
-            <IconHamburger />
+            <SolidMoon/>
+            <Hamburger />
           </IconWrapper>
         </NavButton>
       </Wrapper>

@@ -98,5 +98,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## TODO:
 
-- fix mobile nav button to be centered
 - dont change margin of top left home link when going from desktop -> mobile
+- night shift mode
+- on hover for moon make it solid or hollow
