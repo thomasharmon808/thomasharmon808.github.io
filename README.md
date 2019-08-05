@@ -107,5 +107,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 - add link to resume
 - color scheme
 - add H icon
+- add scroll reveal
 - static queries?
 - use font awesome icons for skills instead of bullet points?

@@ -5,8 +5,6 @@ import Img from "gatsby-image";
 
 import { Heading } from "@components";
 
-import sr from "@utils/sr";
-import { srConfig } from "@config";
 import { theme, media } from "@styles";
 const { colors } = theme
 
@@ -69,9 +67,6 @@ const PicContainer = styled.div`
 
 
 const About = ({ data }) => {
-  const revealContainer = useRef(null)
-  useEffect(() => sr.reveal(revealContainer.current, srConfig()), [])
-
   return (
     <AboutContainer id="about">
       <Heading>About</Heading>
