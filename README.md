@@ -101,3 +101,11 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 - dont change margin of top left home link when going from desktop -> mobile
 - night shift mode
 - on hover for moon make it solid or hollow
+- use graphQL to get content for hero
+- experience section
+- projects section
+- add link to resume
+- color scheme
+- add H icon
+- static queries?
+- use font awesome icons for skills instead of bullet points?

@@ -1,8 +1,9 @@
 import React from "react"
 import styled from "styled-components"
+import { graphql } from "gatsby"
 
 import { rem, media } from "@utils"
-import { Layout, Hero} from "@components"
+import { Layout, Hero, About } from "@components"
 
 const Content = styled.main`
   width: 100%;
@@ -19,12 +20,29 @@ const Content = styled.main`
   `}
 `
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
-    <Content>
-      <Hero/>
+    <Content id="content">
+      <Hero />
+      <About data={data.about} />
     </Content>
   </Layout>
 )
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  {
+    about: aboutJson {
+      content
+      skills
+      avatar {
+        childImageSharp {
+          fluid(maxWidth: 700, quality: 90) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  }
+`

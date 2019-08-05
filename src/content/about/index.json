@@ -1,0 +1,16 @@
+{
+  "content": "Originally born and raised in Hawaii, [something something something] I have a unique perspective blah blah. Upon enrolling at Northeastern University, my soon-to-be alumnus, I found a passion for back-end software engineering. I especially enjoy machine learning and working with [technology stack].",
+  "skills": [
+    "C/C++",
+    "Java",
+    "JavaScript",
+    "HTML/CSS",
+    "React",
+    "NodeJS",
+    "SQL",
+    "etc",
+    "etc",
+    "etc"
+  ],
+  "avatar": "./headshot.JPG"
+}
