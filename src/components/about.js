@@ -29,6 +29,7 @@ const ContentContainer = styled.div`
   width: 60%;
   max-width: 580px;
 	color: ${colors.lightSlate};
+	font-size: 1.125em;
   ${media.tablet`margin-top: 3em;`};
   ${media.tablet`width: 100%;`};
   a {
