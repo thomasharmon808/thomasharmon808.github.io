@@ -1,0 +1,34 @@
+{
+  "jobs": [
+    {
+      "company": "PowerAdvocate",
+      "title": "Software Engineer",
+      "url": "https://w3.poweradvocate.com",
+      "range": "July 2019 - Dec. 2019",
+      "details": ["point 1", "point 2", "point 3"]
+    },
+    {
+      "company": "RIVeR Labs",
+      "title": "Undergraduate Researcher",
+      "url": "http://robot.neu.edu",
+      "range": "Jan. 2018 - July 2018",
+      "details": [
+        "Integrated open-source robotics libraries into a ROS framework using python, to develop facial recognition and person following modules",
+        "Competed in a RoboCup@Home competition in Montreal, Canada as part of a team of researchers. Placed 4$^{th}$ internationally",
+        "Researched optical flow and its applications into autonomous navigation, implementing multiple optical flow algorithms and testing their performance on real hardware"
+      ]
+    },
+    {
+      "company": "Draper",
+      "title": "Advanced Concepts Engineer",
+      "url": "https://www.draper.com",
+      "range": "Jan. 2017 - July 2017",
+      "details": [
+        "Created a custom back-end Java application to translate system engineering models from the modeling language OpenMETA to sysML",
+        "Built a graph database to support continuous integration of system engineering models to modernize the file-based approach in use",
+        "Created an interface to push and pull data using a RESTful API from the graph database and auto-generate a sysML model. Iterated on the design to incorporate live differencing of the model",
+        "Utilized ANSYS Electronic Desktop to model the effect of varying RF wavelengths on the operation of a simple PCB based on trace dimensions"
+      ]
+    }
+  ]
+}

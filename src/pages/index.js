@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 
 import { rem, media } from "@utils"
-import { Layout, Hero, About } from "@components"
+import { Layout, Hero, About, Experience } from "@components"
 
 const Content = styled.main`
   width: 100%;
@@ -25,6 +25,7 @@ const IndexPage = ({ data }) => (
     <Content id="content">
       <Hero />
       <About data={data.about} />
+      <Experience data={data.experience} />
     </Content>
   </Layout>
 )
@@ -42,6 +43,15 @@ export const pageQuery = graphql`
             ...GatsbyImageSharpFluid_withWebp
           }
         }
+      }
+    }
+    experience: experienceJson {
+      jobs {
+        company
+        title
+        url
+        range
+        details
       }
     }
   }

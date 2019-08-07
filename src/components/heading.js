@@ -6,11 +6,10 @@ const Heading = styled.h3`
 position: relative;
 display: flex;
 align-items: center;
-margin: 10px 0 40px;
 width: 100%;
 white-space: nowrap;
 font-size: 2.69em;
-${media.tablet`font-size: 1.5em;`};
+${media.tablet`font-size: 2em;`};
 &:after {
 	content: "";
 	display: block;

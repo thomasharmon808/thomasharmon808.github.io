@@ -5,5 +5,6 @@ import Nav from "./Nav"
 import Hero from "./hero"
 import About from "./about"
 import Heading from "./heading";
+import Experience from "./experience";
 
-export { Footer, Head, Nav, Layout, Hero, About, Heading }
+export { Footer, Head, Nav, Layout, Hero, About, Heading, Experience }

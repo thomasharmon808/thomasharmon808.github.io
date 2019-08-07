@@ -45,7 +45,6 @@ const GlobalStyle = createGlobalStyle`
   h5 {
     font-weight: 600;
     color: ${colors.white};
-    margin: 0 0 10px 0;
   }
 
 	// TODO?
