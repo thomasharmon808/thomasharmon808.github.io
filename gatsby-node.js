@@ -10,10 +10,16 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   if (stage === 'build-html') {
     actions.setWebpackConfig({
       module: {
-        rules: [],
+        rules: [
+          {
+            test: /scrollreveal/,
+            use: loaders.null(),
+          }
+        ],
       },
     });
   }
+
 
   actions.setWebpackConfig({
     resolve: {
