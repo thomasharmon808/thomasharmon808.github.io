@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 
 import { rem, media } from "@utils"
-import { Layout, Hero, About, Experience } from "@components"
+import { Layout, Hero, About, Experience, Projects } from "@components"
 
 const Content = styled.main`
   width: 100%;
@@ -26,6 +26,7 @@ const IndexPage = ({ data }) => (
       <Hero />
       <About data={data.about} />
       <Experience data={data.experience} />
+      <Projects data={data.projects} />
     </Content>
   </Layout>
 )
@@ -52,6 +53,13 @@ export const pageQuery = graphql`
         url
         range
         details
+      }
+    }
+    projects: projectsJson {
+      projects {
+        name
+        url
+        description
       }
     }
   }

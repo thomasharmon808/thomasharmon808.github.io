@@ -40,7 +40,7 @@ const NavLinks = () => (
     <NavSeparator />
     <NavLink to="#proj">Projects</NavLink>
     <NavSeparator />
-    <NavLink to="resume">Resume</NavLink>
+    <NavLink to="/resume.pdf">Resume</NavLink>
   </Wrapper>
 )
 

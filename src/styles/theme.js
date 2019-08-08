@@ -32,7 +32,7 @@ const theme = {
     tan: "#FFCB9A",
     peachOrange: "#D9B08C",
     platinum: "#D1E8E2",
-    gold: "#FFD700"
+    gold: "#FFD700",
   },
 
   fonts: {

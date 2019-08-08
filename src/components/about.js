@@ -1,11 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
-import PropTypes from "prop-types";
 import Img from "gatsby-image";
 
-import { Heading } from "@components";
+import { Heading } from "@components"
 
-import { theme, media } from "@styles";
+import { theme, media } from "@styles"
 const { colors } = theme
 
 const AboutContainer = styled.section`
@@ -26,8 +25,8 @@ const FlexContainer = styled.div`
 const ContentContainer = styled.div`
   width: 60%;
   max-width: 580px;
-	color: ${colors.lightSlate};
-	font-size: 1.125em;
+  color: ${colors.lightSlate};
+  font-size: 1.125em;
   ${media.tablet`margin-top: 3em;`};
   ${media.tablet`width: 100%;`};
   a {
@@ -46,7 +45,7 @@ const Skill = styled.li`
   position: relative;
   margin-bottom: 10px;
   padding-left: 20px;
-	color: ${colors.lightSlate};
+  color: ${colors.lightSlate};
   &:before {
     content: "•";
     position: absolute;
@@ -64,7 +63,6 @@ const PicContainer = styled.div`
   ${media.tablet`margin: 60px auto 0;`};
   ${media.phablet`width: 70%;`};
 `
-
 
 const About = ({ data }) => {
   return (
@@ -84,10 +82,6 @@ const About = ({ data }) => {
       </FlexContainer>
     </AboutContainer>
   )
-}
-
-About.propTypes = {
-  data: PropTypes.array.isRequired,
 }
 
 export default About
