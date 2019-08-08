@@ -8,6 +8,7 @@ import Hamburger from './hamburger';
 import Email from './email';
 import HollowMoon from './hollowmoon';
 import SolidMoon from './solidmoon';
+import Spotify from './spotify';
 
 export {
   Email,
@@ -19,5 +20,6 @@ export {
   Instagram,
   Linkedin,
   Twitter,
-  SolidMoon
+  SolidMoon,
+  Spotify
 };

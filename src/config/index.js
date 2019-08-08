@@ -13,6 +13,7 @@ module.exports = {
   github: "https://github.com/thomasharmon808/",
   linkedin: "https://www.linkedin.com/in/tharmony/",
   twitterHandle: "@thomasharmon808",
+  spotify: "https://open.spotify.com/user/1251807662?si=owPSoIB3TcmECePho4fSSw",
 
   navbarHeight: "69px",
 
@@ -56,8 +57,8 @@ module.exports = {
 
   srConfig: (delay = 200) => ({
     origin: "bottom",
-    distance: "20px",
-    duration: 400,
+    distance: "15px",
+    duration: 350,
     delay,
     rotate: { x: 0, y: 0, z: 0 },
     opacity: 0,

@@ -47,7 +47,6 @@ const GlobalStyle = createGlobalStyle`
     color: ${colors.white};
   }
 
-	// TODO?
   #root {
     min-height: 100vh;
     display: grid;

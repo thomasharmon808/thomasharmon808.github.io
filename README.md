@@ -98,10 +98,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## TODO:
 
-- use graphQL to get content for hero
-- spotify link+logo in hero
-- add link to resume
-- add scroll reveal / make links work
+- add links to github repos for projects (memory allocator, shell, and animator)
 - color scheme
 - add H icon
 - night shift mode

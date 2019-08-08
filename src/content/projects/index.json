@@ -2,22 +2,22 @@
   "projects": [
     {
       "name": "Touchless User Interface",
-      "url": "",
+      "url": "https://github.com/thomasharmon808/capstone",
       "description": "A year long, team capstone project to build a computer-vision based touchless user interface with a monocular RGB camera and machine learning. Allows for static or dynamic gestures to be trained on demand and linked to a repository of IoT actions and applications."
     },
     {
       "name": "ML Futures Volume Prediction",
-      "url": "",
+      "url": "https://github.com/thomasharmon808/volume-prediction",
       "description": "An experiment to test the effectiveness of different RNN architectures on predicting the volume of S&P500 e-mini futures. An RNN, LSTM, and GRU were built, trained and tested to see the performance difference of the architecutre evolutions of an RNN."
     },
     {
       "name": "Personal Website",
-      "url": "",
+      "url": "https://github.com/thomasharmon808/thomasharmon808.github.io/tree/dev",
       "description": "A personal first foray into the realm of web development in order to build this website to host my personal projects and professional website. Built with Gatsby and React for a blazing fast experience."
     },
     {
       "name": "NUFS File System",
-      "url": "",
+      "url": "https://github.com/thomasharmon808/nufs",
       "description": "A file system which implements the FUSE API, with support for reading and writing small files (under 4kB), deleting, renaming, linking, nested directories, and large files."
     },
     {

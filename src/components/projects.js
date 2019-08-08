@@ -1,10 +1,12 @@
-import React from "react"
-import styled from "styled-components"
+import React, { useEffect, useRef }  from "react";
+import styled from "styled-components";
 
-import { Heading } from "@components"
+import sr from '@utils/sr';
+import { srConfig } from '@config';
+import { Heading } from "@components";
+import { theme, media } from "@styles";
 
-import { theme, media } from "@styles"
-const { colors } = theme
+const { colors } = theme;
 
 const ProjectsContainer = styled.section`
   margin: 0 auto;
@@ -15,7 +17,7 @@ const ProjectsContainer = styled.section`
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-`
+`;
 
 const ProjectsGrid = styled.div`
     display: grid;
@@ -38,7 +40,7 @@ const Card = styled.div`
     transform: translateY(-5px);
 		box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.11);
   }
-`
+`;
 
 const Project = styled.div`
   display: flex;
@@ -50,15 +52,21 @@ const Project = styled.div`
   height: 100%;
   border-radius: ${theme.borderRadius};
   background-color: ${colors.lightNavy};
-`
+`;
 
 const Content = styled.div`
   padding: 1em 0;
-`
+`;
 
 const Projects = ({ data }) => {
+  const revealContainer = useRef(null);
+  const revealProjects = useRef([]);
+  useEffect(() => {
+    sr.reveal(revealContainer.current, srConfig());
+    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
+  }, []);
   return (
-    <ProjectsContainer id="projects">
+    <ProjectsContainer id="projects" ref={revealContainer}>
       <Heading>Projects</Heading>
       <ProjectsGrid>
         {data &&
@@ -67,6 +75,7 @@ const Projects = ({ data }) => {
             return (
               <Card
                 key={i}
+                ref={x => (revealProjects.current[i] = x)}
                 as="a"
                 href={url}
                 target="_blank"

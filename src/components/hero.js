@@ -1,11 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 
-import { Github, Linkedin, Email } from "@components/icons"
+import { Github, Linkedin, Email, Spotify } from "@components/icons"
 
 import { theme } from "@styles"
 import { media } from "@utils"
-import { email, github, linkedin } from "@config"
+import { email, github, linkedin, spotify } from "@config"
 
 const { colors } = theme
 
@@ -57,7 +57,7 @@ const IconList = styled.ul`
 `
 
 const IconItem = styled.li`
-  padding-right: 2.5em;
+  padding-right: 4em;
 `
 
 const IconWrapper = styled.a`
@@ -72,15 +72,11 @@ const IconWrapper = styled.a`
   }
 `
 
-const Hero = () => (
+const Hero = ({ data }) => (
   <HeroContainer>
-    <Title>Hey, I'm Thomas Harmon.</Title>
-    <Subtitle>I love to code.</Subtitle>
-    <Blurb>
-      I'm a full-stack software engineer in Boston, MA. My specialities are in
-      back-end development, [something], and machine learning. Feel free to
-      connect with me through any of the following:
-    </Blurb>
+    <Title>{data.title}</Title>
+    <Subtitle>{data.subtitle}</Subtitle>
+    <Blurb>{data.blurb}</Blurb>
     <IconList>
       <IconItem key="1">
         <IconWrapper href={github} target="_blank">
@@ -95,6 +91,11 @@ const Hero = () => (
       <IconItem key="3">
         <IconWrapper href={`mailto:${email}`} target="_blank">
           <Email />
+        </IconWrapper>
+      </IconItem>
+      <IconItem key="4">
+        <IconWrapper href={spotify} target="_blank">
+          <Spotify />
         </IconWrapper>
       </IconItem>
     </IconList>
