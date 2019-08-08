@@ -102,10 +102,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 - color scheme
 - add H icon
 - night shift mode
-- Fonts + font sizes
 - add tech list for each project
+- Fonts + font sizes
 - add company logos + technologies used for each job
 - on hover for moon make it solid or hollow
-- dont change margin of top left home link when going from desktop -> mobile
-- static queries?
-- use font awesome icons for skills instead of bullet points?

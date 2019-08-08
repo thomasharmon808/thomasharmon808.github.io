@@ -27,18 +27,20 @@ const ProjectsGrid = styled.div`
     ${media.desktop`grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));`};
 `;
 
+const CardWrapper = styled.div`
+	&:hover,
+  &:focus {
+    transform: translateY(-15px);
+		box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.11);
+  }
+`;
+
 const Card = styled.div`
   width: 100%;
   overflow: hidden;
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.11);
   p {
     color: ${colors.lightSlate};
-  }
-	&:hover,
-  &:focus {
-    outline: 0;
-    transform: translateY(-5px);
-		box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.11);
   }
 `;
 
@@ -73,21 +75,23 @@ const Projects = ({ data }) => {
           data.projects.map((project, i) => {
             const { name, url, description } = project
             return (
-              <Card
-                key={i}
-                ref={x => (revealProjects.current[i] = x)}
-                as="a"
-                href={url}
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-              >
-                <Project>
-									<Content>
-	                  <h3>{name}</h3>
-	                  <p>{description}</p>
-									</Content>
-                </Project>
-              </Card>
+              <CardWrapper>
+                <Card
+                  key={i}
+                  ref={x => (revealProjects.current[i] = x)}
+                  as="a"
+                  href={url}
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                >
+                  <Project>
+  									<Content>
+  	                  <h3>{name}</h3>
+  	                  <p>{description}</p>
+  									</Content>
+                  </Project>
+                </Card>
+              </CardWrapper>
             )
           })}
       </ProjectsGrid>
