@@ -88,6 +88,11 @@ const GlobalStyle = createGlobalStyle`
     border: 0;
     border-radius: 0;
 
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    overflow: hidden;
+    outline:none;
+
     &:focus,
     &:active {
       outline-color: ${colors.blue};

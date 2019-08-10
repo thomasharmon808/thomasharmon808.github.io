@@ -5,6 +5,7 @@ import NavLinks from './NavLinks';
 import NavSeparator from './NavSeparator';
 import NavButton from './NavButton';
 import LogoLink from './LogoLink';
+import DarkModeButton from './DarkModeButton';
 
 import { Hamburger, Moon } from '@components/icons';
 import { rem, media } from '@utils';
@@ -85,7 +86,9 @@ const MobileNavbar = props => {
           active={!isMobileNavFolded}
         >
           <IconWrapper>
-            <Moon/>
+            <DarkModeButton>
+              <Moon/>
+            </DarkModeButton>
             <Hamburger />
           </IconWrapper>
         </NavButton>

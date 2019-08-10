@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { Moon } from '@components/icons';
 import { rem, media } from '@utils';
 import { navbarHeight, siteTitle } from '@config';
 import { theme } from '@styles';
@@ -8,6 +9,8 @@ import { theme } from '@styles';
 import NavLinks from './NavLinks';
 import MobileNavbar from './MobileNavbar';
 import LogoLink from './LogoLink';
+import NavSeparator from './NavSeparator';
+import DarkModeButton from './DarkModeButton';
 
 const { colors } = theme;
 
@@ -62,6 +65,10 @@ class NavBar extends React.PureComponent {
           </StartWrapper>
           <EndWrapper>
             <NavLinks />
+            <NavSeparator/>
+            <DarkModeButton>
+              <Moon/>
+            </DarkModeButton>
           </EndWrapper>
         </NormalNavbar>
 

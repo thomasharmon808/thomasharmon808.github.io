@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-import { Moon } from '@components/icons';
-
 import { rem } from '@utils';
 import { navbarHeight } from '@config';
 import { theme } from '@styles';
@@ -56,20 +54,6 @@ const ResumeLink = styled.a`
   }
 `
 
-const DarkModeButton = styled.button`
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
-  svg {
-    width: 24px;
-    height: 26px;
-    color: ${colors.white};
-  }
-`
-
 const NavLinks = () => (
   <Wrapper>
     <NavLink href="#about">About</NavLink>
@@ -83,10 +67,6 @@ const NavLinks = () => (
                             rel="nofollow noopener noreferrer">
                               Resume
      </ResumeLink>
-    <NavSeparator />
-    <DarkModeButton>
-      <Moon/>
-    </DarkModeButton>
   </Wrapper>
 )
 
