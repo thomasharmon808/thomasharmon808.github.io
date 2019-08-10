@@ -21,7 +21,7 @@ const Content = styled.main`
 const IndexPage = ({ data }) => (
   <Layout>
     <Content id="content">
-      <Hero data={data.hero}/>
+      <Hero data={data.hero} />
       <About data={data.about} />
       <Experience data={data.experience} />
       <Projects data={data.projects} />

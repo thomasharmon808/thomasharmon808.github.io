@@ -1,9 +1,9 @@
-import React from 'react'
-import { DarkModeContext } from '@components';
-import useDarkMode from '../hooks/useDarkMode';
+import React from "react"
+import { DarkModeContext } from "@components"
+import useDarkMode from "../hooks/useDarkMode"
 
 const Provider = ({ children }) => {
-  const [theme, toggleTheme] = useDarkMode();
+  const [theme, toggleTheme] = useDarkMode()
 
   return (
     <DarkModeContext.Provider
@@ -17,4 +17,4 @@ const Provider = ({ children }) => {
   )
 }
 
-export default Provider;
+export default Provider

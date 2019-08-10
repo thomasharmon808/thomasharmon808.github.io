@@ -38,7 +38,7 @@ const theme = {
     // striking and simple
     darkGrey: "#1F2833",
     lightestGrey: "#C5C6C7",
-    mudBlue: "#45A29E"
+    mudBlue: "#45A29E",
   },
 
   fonts: {

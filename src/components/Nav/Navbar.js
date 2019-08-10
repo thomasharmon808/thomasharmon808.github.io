@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
 
-import { Moon } from '@components/icons';
+import { Moon, Sun } from '@components/icons';
 import { rem, media } from '@utils';
 import { navbarHeight, siteTitle } from '@config';
 import { theme } from '@styles';
+import { DarkModeContext } from '@components';
 
 import NavLinks from './NavLinks';
 import MobileNavbar from './MobileNavbar';
@@ -51,34 +52,30 @@ const EndWrapper = styled.div`
   margin-right: 1.25rem;
 `
 
-class NavBar extends React.PureComponent {
-  render() {
-    const {
-      onMobileNavToggle,
-      isMobileNavFolded,
-    } = this.props
-    return (
-      <Wrapper>
-        <NormalNavbar>
-          <StartWrapper>
-            <LogoLink>{siteTitle}</LogoLink>
-          </StartWrapper>
-          <EndWrapper>
-            <NavLinks />
-            <NavSeparator/>
-            <DarkModeButton>
-              <Moon/>
-            </DarkModeButton>
-          </EndWrapper>
-        </NormalNavbar>
+const NavBar = props => {
+  const { theme, toggleTheme } = useContext(DarkModeContext);
+  return (
+    <Wrapper>
+      <NormalNavbar>
+        <StartWrapper>
+          <LogoLink>{siteTitle}</LogoLink>
+        </StartWrapper>
+        <EndWrapper>
+          <NavLinks />
+          <NavSeparator/>
+          <DarkModeButton onClick={toggleTheme}>
+            {theme === "light" ? <Moon/> : <Sun/>}
+          </DarkModeButton>
+        </EndWrapper>
+      </NormalNavbar>
 
-        <MobileNavbar
-          isMobileNavFolded={isMobileNavFolded}
-          onMobileNavToggle={onMobileNavToggle}
-        />
-      </Wrapper>
-    )
-  }
+      <MobileNavbar
+        isMobileNavFolded={props.isMobileNavFolded}
+        onMobileNavToggle={props.onMobileNavToggle}
+        onToggleTheme={toggleTheme}
+      />
+    </Wrapper>
+  )
 }
 
 export default NavBar

@@ -1,13 +1,13 @@
-import React, { useEffect, useRef } from "react";
-import styled from "styled-components";
-import Img from "gatsby-image";
+import React, { useEffect, useRef } from "react"
+import styled from "styled-components"
+import Img from "gatsby-image"
 
-import sr from '@utils/sr';
-import { srConfig } from '@config';
-import { Heading } from "@components";
-import { theme, media } from "@styles";
+import sr from "@utils/sr"
+import { srConfig } from "@config"
+import { Heading } from "@components"
+import { theme, media } from "@styles"
 
-const { colors } = theme;
+const { colors } = theme
 
 const AboutContainer = styled.section`
   margin: 0 auto;
@@ -15,14 +15,14 @@ const AboutContainer = styled.section`
   max-width: 1000px;
   ${media.tablet`padding: 100px 0;`};
   position: relative;
-`;
+`
 
 const FlexContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   ${media.tablet`display: block;`};
-`;
+`
 
 const ContentContainer = styled.div`
   width: 60%;
@@ -34,14 +34,14 @@ const ContentContainer = styled.div`
   a {
     color: ${colors.electricBlue};
   }
-`;
+`
 
 const SkillsContainer = styled.ul`
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 200px));
   overflow: hidden;
   margin-top: 20px;
-`;
+`
 
 const Skill = styled.li`
   position: relative;
@@ -54,7 +54,7 @@ const Skill = styled.li`
     left: 0;
     color: ${colors.electricBlue};
   }
-`;
+`
 
 const PicContainer = styled.div`
   position: relative;
@@ -63,11 +63,11 @@ const PicContainer = styled.div`
   margin-right: 60px;
   ${media.tablet`margin: 60px auto 0;`};
   ${media.phablet`width: 70%;`};
-`;
+`
 
 const About = ({ data }) => {
-  const revealContainer = useRef(null);
-  useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
+  const revealContainer = useRef(null)
+  useEffect(() => sr.reveal(revealContainer.current, srConfig()), [])
   return (
     <AboutContainer id="about" ref={revealContainer}>
       <Heading>About</Heading>

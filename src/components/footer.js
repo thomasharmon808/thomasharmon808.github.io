@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
-import { theme } from "@styles";
-import { rem } from "@utils";
+import { theme } from "@styles"
+import { rem } from "@utils"
 
-const { colors } = theme;
+const { colors } = theme
 
 const Wrapper = styled.div`
   min-height: ${rem(50)};

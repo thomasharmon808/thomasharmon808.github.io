@@ -52,6 +52,7 @@ const MobileNavbar = props => {
   const {
     isMobileNavFolded,
     onMobileNavToggle,
+    onToggleTheme
   } = props
 
   return (
@@ -61,7 +62,7 @@ const MobileNavbar = props => {
       </LogoLink>
 
       <Wrapper>
-        <DarkModeButton>
+        <DarkModeButton onClick={onToggleTheme}>
           <Moon/>
         </DarkModeButton>
         <NavButton

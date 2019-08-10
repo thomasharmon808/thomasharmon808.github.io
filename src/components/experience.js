@@ -1,12 +1,12 @@
-import React, { useEffect, useRef }  from "react";
-import styled from "styled-components";
+import React, { useEffect, useRef } from "react"
+import styled from "styled-components"
 
-import sr from '@utils/sr';
-import { srConfig } from '@config';
-import { Heading } from "@components";
-import { theme, media } from "@styles";
+import sr from "@utils/sr"
+import { srConfig } from "@config"
+import { Heading } from "@components"
+import { theme, media } from "@styles"
 
-const { colors } = theme;
+const { colors } = theme
 
 const ExperienceContainer = styled.section`
   margin: 0 auto;
@@ -14,13 +14,13 @@ const ExperienceContainer = styled.section`
   max-width: 1000px;
   ${media.tablet`padding: 100px 0;`};
   position: relative;
-`;
+`
 
 const ContentContainer = styled.div`
   position: relative;
   ${media.tablet`padding-left: 1.25em;`};
   ${media.thone`padding-left: 0;`};
-`;
+`
 
 const Job = styled.div`
   top: 0;
@@ -35,7 +35,7 @@ const Job = styled.div`
     ${media.desktop`max-width: 85%;`};
     ${media.tablet`max-width: 100%;`};
   }
-`;
+`
 
 const JobTitle = styled.h4`
   color: ${colors.lightestSlate};
@@ -44,11 +44,11 @@ const JobTitle = styled.h4`
   margin-bottom: 0px;
   padding-bottom: 0px;
   ${media.desktop`font-size: 1.25em;`};
-`;
+`
 
 const Company = styled.span`
   color: ${colors.electricBlue};
-`;
+`
 
 const JobRange = styled.h5`
   font-size: 1.2em;
@@ -57,15 +57,15 @@ const JobRange = styled.h5`
   margin-bottom: 15px;
   margin-top: 10px;
   ${media.desktop`font-size: 1em;`};
-`;
+`
 
 const Experience = ({ data }) => {
-  const revealContainer = useRef(null);
-  const revealJobs = useRef([]);
+  const revealContainer = useRef(null)
+  const revealJobs = useRef([])
   useEffect(() => {
-    sr.reveal(revealContainer.current, srConfig());
-    revealJobs.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 200)));
-  }, []);
+    sr.reveal(revealContainer.current, srConfig())
+    revealJobs.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 200)))
+  }, [])
   return (
     <ExperienceContainer id="experience" ref={revealContainer}>
       <Heading>Experience</Heading>
@@ -74,7 +74,12 @@ const Experience = ({ data }) => {
           data.jobs.map((job, i) => {
             const { company, title, url, range, details } = job
             return (
-              <Job key={i} ref={x => (revealJobs.current[i] = x)} id={`job${i}`} aria-labelledby={`job${i}`}>
+              <Job
+                key={i}
+                ref={x => (revealJobs.current[i] = x)}
+                id={`job${i}`}
+                aria-labelledby={`job${i}`}
+              >
                 <JobTitle>
                   <span>{title}</span>
                   <Company>
