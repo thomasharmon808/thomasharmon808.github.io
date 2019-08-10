@@ -18,40 +18,18 @@ const Wrapper = styled.div`
   flex-direction: column;
 `
 
-class Layout extends React.PureComponent {
-  state = {
-    isMobileNavFolded: true,
-  }
-
-  toggleMobileNav = () => {
-    this.setState(prevState => ({
-      isMobileNavFolded: !prevState.isMobileNavFolded,
-    }))
-  }
-
-  onRouteChange = () => {
-    this.setState({
-      isMobileNavFolded: true,
-    })
-  }
-
-  render() {
+const Layout = ({ children }) => {
     return (
       <div id="root">
         <Head />
         <GlobalStyle />
-
         <Wrapper>
-          <Nav
-            isMobileNavFolded={this.state.isMobileNavFolded}
-            onMobileNavToggle={this.toggleMobileNav}
-          />
-          {this.props.children}
+          <Nav/>
+            {children}
           <Footer />
         </Wrapper>
       </div>
     )
-  }
 }
 
 Layout.propTypes = {

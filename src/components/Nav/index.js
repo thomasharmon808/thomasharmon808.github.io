@@ -1,20 +1,33 @@
 import React from 'react';
 import Navbar from './Navbar';
 
-const Nav = props => {
-  const {
-    isMobileNavFolded,
-    onMobileNavToggle,
-  } = props
+class Nav extends React.PureComponent {
+  state = {
+    isMobileNavFolded: true,
+  }
 
-  return (
-    <div>
-      <Navbar
-        isMobileNavFolded={isMobileNavFolded}
-        onMobileNavToggle={onMobileNavToggle}
-      />
-    </div>
-  )
+  onMobileNavToggle = () => {
+    this.setState(prevState => ({
+      isMobileNavFolded: !prevState.isMobileNavFolded,
+    }))
+  }
+
+  onRouteChange = () => {
+    this.setState({
+      isMobileNavFolded: true,
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <Navbar
+          isMobileNavFolded={this.state.isMobileNavFolded}
+          onMobileNavToggle={this.onMobileNavToggle}
+        />
+      </div>
+    )
+  }
 }
 
 export default Nav
