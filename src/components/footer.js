@@ -1,7 +1,10 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
-import { rem } from "@utils"
+import { theme } from "@styles";
+import { rem } from "@utils";
+
+const { colors } = theme;
 
 const Wrapper = styled.div`
   min-height: ${rem(50)};
@@ -9,8 +12,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  background: #cecece;
-  color: #868686;
+  background: ${colors.silver};
 `
 
 const FooterLink = styled.a`

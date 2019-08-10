@@ -43,7 +43,6 @@ const JobTitle = styled.h4`
   font-weight: 500;
   margin-bottom: 0px;
   padding-bottom: 0px;
-  color: ${colors.lightestSlate};
   ${media.desktop`font-size: 1.25em;`};
 `;
 

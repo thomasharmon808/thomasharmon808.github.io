@@ -9,7 +9,9 @@ import LogoLink from './LogoLink';
 import { Hamburger, SolidMoon } from '@components/icons';
 import { rem, media } from '@utils';
 import { navbarHeight, siteTitle } from '@config';
+import { theme } from '@styles';
 
+const { colors } = theme;
 
 const Wrapper = styled.div`
   display: none;
@@ -41,14 +43,14 @@ const SecondaryMenu = styled.div`
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
   overflow-y: hidden;
-  background: #cecece;
+  background: ${colors.slate};
   color: #868686;
 `
 
 const IconWrapper = styled.div`
   transition: transform 0.1s;
   width: 110px;
-  color: white;
+  color: ${colors.white};
   justify-content: center;
   svg {
     width: 32px;

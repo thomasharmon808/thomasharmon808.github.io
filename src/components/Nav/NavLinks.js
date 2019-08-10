@@ -4,8 +4,11 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import { rem } from '@utils';
 import { navbarHeight } from '@config';
+import { theme } from '@styles';
 
 import NavSeparator from './NavSeparator';
+
+const { colors } = theme;
 
 const Wrapper = styled.nav`
   display: flex;
@@ -20,8 +23,8 @@ const NavLink = styled(AnchorLink)`
   transition: opacity 0.2s, transform 0.2s;
   cursor: pointer;
   letter-spacing: 0.025rem;
-  font-size: 1.2em;
-  color: currentColor;
+  font-size: 1.25rem;
+  color: ${colors.white};
   &:hover,
   &:focus {
     opacity: 0.8;
@@ -39,8 +42,8 @@ const ResumeLink = styled.a`
   transition: opacity 0.2s, transform 0.2s;
   cursor: pointer;
   letter-spacing: 0.025rem;
-  font-size: 1.2em;
-  color: currentColor;
+  font-size: 1.25rem;
+  color: ${colors.white};
   &:hover,
   &:focus {
     opacity: 0.8;

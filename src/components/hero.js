@@ -36,7 +36,8 @@ const Title = styled.h1`
 
 const Subtitle = styled.h2`
   line-height: 1.1;
-  font-size: 3.3em;
+  font-size: 1.5em;
+  color: ${colors.lightestSlate};
   ${media.giant`font-size: 2.3em;`};
   ${media.tablet`font-size: 2em;`};
   ${media.phablet`font-size: 1.9em;`};
@@ -47,6 +48,7 @@ const Blurb = styled.div`
   width: 50%;
   max-width: 600px;
   font-size: 1.2em;
+  color: ${colors.lightSlate};
 `
 
 const IconList = styled.ul`

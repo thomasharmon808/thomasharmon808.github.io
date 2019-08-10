@@ -31,14 +31,18 @@ const CardWrapper = styled.div`
 	&:hover,
   &:focus {
     transform: translateY(-15px);
-		box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.11);
+		box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.15);
+    h3 {
+      color: ${colors.electricBlue};
+      text-decoration: underline;
+    }
   }
 `;
 
 const Card = styled.div`
   width: 100%;
   overflow: hidden;
-  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.11);
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.15);
   p {
     color: ${colors.lightSlate};
   }
@@ -53,7 +57,7 @@ const Project = styled.div`
   padding: 0.5rem 1.75rem 2rem 1.75rem;
   height: 100%;
   border-radius: ${theme.borderRadius};
-  background-color: ${colors.lightNavy};
+  background-color: ${colors.midnightGreen};
 `;
 
 const Content = styled.div`
@@ -75,7 +79,7 @@ const Projects = ({ data }) => {
           data.projects.map((project, i) => {
             const { name, url, description } = project
             return (
-              <CardWrapper>
+              <CardWrapper key ={i}>
                 <Card
                   key={i}
                   ref={x => (revealProjects.current[i] = x)}

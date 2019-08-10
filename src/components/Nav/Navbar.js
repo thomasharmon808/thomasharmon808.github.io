@@ -22,10 +22,9 @@ const Wrapper = styled.nav`
   height: ${rem(navbarHeight)};
   font-size: ${rem(15)};
   font-weight: 500;
-  background: tomato;
+  background: ${colors.metallicSeaweed};
   transition: background 300ms ease-out;
-  color: white;
-
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
   a {
     text-decoration: none;
   }
@@ -52,6 +51,7 @@ const EndWrapper = styled.div`
   svg {
     width: 24px;
     height: 24px;
+    color: ${colors.white};
   }
 `
 
