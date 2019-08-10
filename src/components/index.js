@@ -8,4 +8,14 @@ import Heading from "./heading"
 import Experience from "./experience"
 import Projects from "./projects"
 
-export { Footer, Head, Nav, Layout, Hero, About, Heading, Experience, Projects }
+export {
+	Footer,
+	Head,
+	Nav,
+	Layout,
+	Hero,
+	About,
+	Heading,
+	Experience,
+	Projects
+}

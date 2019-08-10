@@ -6,7 +6,7 @@ import NavSeparator from './NavSeparator';
 import NavButton from './NavButton';
 import LogoLink from './LogoLink';
 
-import { Hamburger, SolidMoon } from '@components/icons';
+import { Hamburger, Moon } from '@components/icons';
 import { rem, media } from '@utils';
 import { navbarHeight, siteTitle } from '@config';
 import { theme } from '@styles';
@@ -56,7 +56,7 @@ const IconWrapper = styled.div`
     width: 32px;
     height: 28px;
   }
-  svg.SolidMoon {
+  svg.Moon {
     margin-right: 20px;
     width: 24px;
     height: 24px;
@@ -85,7 +85,7 @@ const MobileNavbar = props => {
           active={!isMobileNavFolded}
         >
           <IconWrapper>
-            <SolidMoon/>
+            <Moon/>
             <Hamburger />
           </IconWrapper>
         </NavButton>

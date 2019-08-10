@@ -6,9 +6,9 @@ import External from './external';
 import Fork from './fork';
 import Hamburger from './hamburger';
 import Email from './email';
-import HollowMoon from './hollowmoon';
-import SolidMoon from './solidmoon';
+import Moon from './moon';
 import Spotify from './spotify';
+import Sun from './sun';
 
 export {
   Email,
@@ -16,10 +16,10 @@ export {
   Fork,
   Github,
   Hamburger,
-  HollowMoon,
   Instagram,
   Linkedin,
   Twitter,
-  SolidMoon,
-  Spotify
+  Moon,
+  Spotify,
+  Sun
 };

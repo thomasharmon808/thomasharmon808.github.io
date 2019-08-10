@@ -1,14 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { SolidMoon } from '@components/icons';
 import { rem, media } from '@utils';
 import { navbarHeight, siteTitle } from '@config';
 import { theme } from '@styles';
 
 import NavLinks from './NavLinks';
 import MobileNavbar from './MobileNavbar';
-import NavSeparator from './NavSeparator';
 import LogoLink from './LogoLink';
 
 const { colors } = theme;
@@ -23,7 +21,6 @@ const Wrapper = styled.nav`
   font-size: ${rem(15)};
   font-weight: 500;
   background: ${colors.metallicSeaweed};
-  transition: background 300ms ease-out;
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
   a {
     text-decoration: none;
@@ -48,11 +45,7 @@ const EndWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  svg {
-    width: 24px;
-    height: 24px;
-    color: ${colors.white};
-  }
+  margin-right: 1.25rem;
 `
 
 class NavBar extends React.PureComponent {
@@ -61,7 +54,6 @@ class NavBar extends React.PureComponent {
       onMobileNavToggle,
       isMobileNavFolded,
     } = this.props
-
     return (
       <Wrapper>
         <NormalNavbar>
@@ -70,8 +62,6 @@ class NavBar extends React.PureComponent {
           </StartWrapper>
           <EndWrapper>
             <NavLinks />
-            <NavSeparator/>
-            <SolidMoon/>
           </EndWrapper>
         </NormalNavbar>
 

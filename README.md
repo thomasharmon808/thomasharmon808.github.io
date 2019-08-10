@@ -99,7 +99,9 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 ## TODO:
 
 - add links to github repos for projects (memory allocator, shell, and animator)
+- add glassblowing
 - add H icon
+- rewrite descriptions
 - Fonts + font sizes
 - night shift mode
 - add tech list for each project
