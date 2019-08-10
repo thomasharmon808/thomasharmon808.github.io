@@ -16,6 +16,11 @@ const NavButton = styled.button`
   vertical-align: middle;
   justify-content: center;
   cursor: pointer;
+  transition: transform 0.1s;
+  svg {
+    width: 32px;
+    height: 28px;
+  }
 `
 
 export default NavButton

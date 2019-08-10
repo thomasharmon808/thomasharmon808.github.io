@@ -48,26 +48,6 @@ const SecondaryMenu = styled.div`
   color: #868686;
 `
 
-const IconWrapper = styled.div`
-  transition: transform 0.1s;
-  width: 110px;
-  color: ${colors.white};
-  justify-content: center;
-  svg {
-    width: 32px;
-    height: 28px;
-  }
-  svg.Moon {
-    margin-right: 20px;
-    width: 24px;
-    height: 24px;
-  }
-`
-
-const SecondaryMenuItem = styled.div`
-   padding-right: 1.25rem;
-`
-
 const MobileNavbar = props => {
   const {
     isMobileNavFolded,
@@ -81,24 +61,19 @@ const MobileNavbar = props => {
       </LogoLink>
 
       <Wrapper>
+        <DarkModeButton>
+          <Moon/>
+        </DarkModeButton>
         <NavButton
           onClick={onMobileNavToggle}
           active={!isMobileNavFolded}
         >
-          <IconWrapper>
-            <DarkModeButton>
-              <Moon/>
-            </DarkModeButton>
-            <Hamburger />
-          </IconWrapper>
+          <Hamburger />
         </NavButton>
       </Wrapper>
 
       <SecondaryMenu open={!isMobileNavFolded}>
         <NavLinks />
-        <NavSeparator />
-        <SecondaryMenuItem>
-        </SecondaryMenuItem>
       </SecondaryMenu>
     </Wrapper>
   )
