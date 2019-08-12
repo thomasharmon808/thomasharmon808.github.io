@@ -76,6 +76,7 @@ const NavBar = props => {
         isMobileNavFolded={props.isMobileNavFolded}
         onMobileNavToggle={props.onMobileNavToggle}
         onToggleTheme={toggleTheme}
+        theme={theme}
       />
     </Wrapper>
   )

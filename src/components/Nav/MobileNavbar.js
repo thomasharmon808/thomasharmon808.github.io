@@ -6,7 +6,7 @@ import NavButton from './NavButton';
 import LogoLink from './LogoLink';
 import DarkModeButton from './DarkModeButton';
 
-import { Hamburger, Moon } from '@components/icons';
+import { Hamburger, Moon, Sun } from '@components/icons';
 import { rem, media } from '@utils';
 import { navbarHeight, siteTitle } from '@config';
 import { theme } from '@styles';
@@ -51,7 +51,8 @@ const MobileNavbar = props => {
   const {
     isMobileNavFolded,
     onMobileNavToggle,
-    onToggleTheme
+    onToggleTheme,
+    theme
   } = props
 
   return (
@@ -61,9 +62,9 @@ const MobileNavbar = props => {
       </LogoLink>
 
       <Wrapper>
-        <DarkModeButton onClick={onToggleTheme}>
-          <Moon/>
-        </DarkModeButton>
+      <DarkModeButton onClick={onToggleTheme}>
+            {theme === "light" ? <Moon/> : <Sun/>}
+          </DarkModeButton>
         <NavButton
           onClick={onMobileNavToggle}
           active={!isMobileNavFolded}
