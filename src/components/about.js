@@ -9,7 +9,7 @@ import { media } from "@styles"
 
 const AboutContainer = styled.section`
   margin: 0 auto;
-  padding: 150px 0;
+  padding: 100px 0;
   max-width: 1000px;
   ${media.tablet`padding: 100px 0;`};
   position: relative;
@@ -32,9 +32,10 @@ const ContentContainer = styled.div`
 
 const SkillsContainer = styled.ul`
   display: grid;
-  grid-template-columns: repeat(2, minmax(140px, 200px));
+  grid-template-columns: repeat(3, minmax(140px, 240px));
   overflow: hidden;
   margin-top: 20px;
+  ${media.phablet`grid-template-columns: repeat(2, minmax(140px, 200px));`};
 `
 
 const Skill = styled.li`
@@ -69,6 +70,8 @@ const About = ({ data }) => {
         </PicContainer>
         <ContentContainer>
           {data.content}
+          <br /><br />
+          <p>Here's the technologies I work with regularly:</p>
           <SkillsContainer>
             {data.skills &&
               data.skills.map((skill, i) => <Skill key={i}>{skill}</Skill>)}

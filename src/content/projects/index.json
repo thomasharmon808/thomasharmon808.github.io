@@ -3,37 +3,50 @@
     {
       "name": "Touchless User Interface",
       "url": "https://github.com/thomasharmon808/capstone",
-      "description": "A year long, team capstone project to build a computer-vision based touchless user interface with a monocular RGB camera and machine learning. Allows for static or dynamic gestures to be trained on demand and linked to a repository of IoT actions and applications."
+      "description": "A year long, team capstone project to build a computer-vision based touchless user interface with a monocular RGB camera and machine learning. Allows for static or dynamic gestures to be trained on demand and linked to a repository of IoT actions and applications.",
+      "techstack": ["Python", "AWS", "Machine Learning"]
     },
     {
       "name": "ML Futures Volume Prediction",
       "url": "https://github.com/thomasharmon808/volume-prediction",
-      "description": "An experiment to test the effectiveness of different RNN architectures on predicting the volume of S&P500 e-mini futures. An RNN, LSTM, and GRU were built, trained and tested to see the performance difference of the architecutre evolutions of an RNN."
+      "description": "An experiment to test the effectiveness of different RNN architectures on predicting the volume of S&P500 e-mini futures. An RNN, LSTM, and GRU were built, trained and tested to see the performance difference of the architecutre evolutions of an RNN.",
+      "techstack": ["Python", "Machine Learning", "MySQL"]
     },
     {
       "name": "Personal Website",
       "url": "https://github.com/thomasharmon808/thomasharmon808.github.io/tree/dev",
-      "description": "A personal first foray into the realm of web development in order to build this website to host my personal projects and professional website. Built with Gatsby and React for a blazing fast experience."
+      "description": "A personal first foray into the realm of web development in order to build this website to host my personal projects and professional website. Built with Gatsby and React for a blazing fast experience.",
+      "techstack": ["React", "JavaScript", "CSS", "Gatsby"]
     },
     {
       "name": "NUFS File System",
       "url": "https://github.com/thomasharmon808/nufs",
-      "description": "A file system which implements the FUSE API, with support for reading and writing small files (under 4kB), deleting, renaming, linking, nested directories, and large files."
+      "description": "A file system which implements the FUSE API, with support for reading and writing small files (under 4kB), deleting, renaming, linking, nested directories, and large files.",
+      "techstack": ["C"]
     },
     {
       "name": "Memory Allocator",
       "url": "",
-      "description": "A fast and dynamic memory allocator to emulate malloc from the C standard library. Uses a number of optimization techniques to improve speed and reduce memory fragmentation."
+      "description": "A fast and dynamic memory allocator to emulate malloc from the C standard library. Uses a number of optimization techniques to improve speed and reduce memory fragmentation.",
+      "techstack": ["C"]
     },
     {
       "name": "Shell",
-      "url": "",
-      "description": "A basic Unix shell implementation with support for command line operations such as redirects, piping, background operations, && and || operations, and the ; operation."
+      "url": "https://github.com/thomasharmon808/nush",
+      "description": "A basic Unix shell implementation with support for command line operations such as redirects, piping, background operations, && and || operations, and the ; operation.",
+      "techstack": ["C"]
     },
     {
       "name": "Animator",
-      "url": "",
-      "description": "A project focused on OOD principles and practices, specfically the MVC pattern. The goal of this project was to design an interactive animator application that was modular and easily extensible. Throughout the project, different views and controllers were designed to demonstrate these principles."
+      "url": "https://github.com/thomasharmon808/animator",
+      "description": "A project focused on OOD principles and practices, specfically the MVC pattern. The goal of this project was to design an interactive animator application that was modular and easily extensible. Throughout the project, different views and controllers were designed to demonstrate these principles.",
+      "techstack": ["Java", "MVC"]
+    },
+    {
+      "name": "Glassblowing",
+      "url": "https://www.icloud.com/sharedalbum/#B0s5oqs3q2soEY",
+      "description": "A passion of my is glassblowing. I first learned how to glassblow at Punahou School, my highschool in Honolulu, Oahu. I became one of the most dedicated students in our class, regularly spending the entire school day in the shop after I finished my AP exams. I've since carried on my passions at Diablo Glass School in Boston.",
+      "techstack": []
     }
   ]
 }

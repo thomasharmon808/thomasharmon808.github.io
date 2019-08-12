@@ -10,7 +10,7 @@ const { colors } = theme
 
 const ProjectsContainer = styled.section`
   margin: 0 auto;
-  padding: 150px 0;
+  padding: 100px 0;
   max-width: 1150px;
   ${media.tablet`padding: 100px 0;`};
   display: flex;
@@ -53,12 +53,28 @@ const Project = styled.div`
   position: relative;
   padding: 0.5rem 1.75rem 2rem 1.75rem;
   height: 100%;
+  min-height: 300px;
+  max-height: 300px;
   border-radius: ${theme.borderRadius};
 `
 
 const Content = styled.div`
-  padding: 1em 0;
+  padding: 0.25em 0;
 `
+
+const TechStack = styled.ul`
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  li {
+    line-height: 1.75;
+    margin-right: 15px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+`;
 
 const Projects = ({ data }) => {
   const revealContainer = useRef(null)
@@ -75,7 +91,7 @@ const Projects = ({ data }) => {
       <ProjectsGrid>
         {data &&
           data.projects.map((project, i) => {
-            const { name, url, description } = project
+            const { name, url, description, techstack } = project
             return (
               <CardWrapper key={i}>
                 <Card
@@ -91,6 +107,11 @@ const Projects = ({ data }) => {
                       <h3>{name}</h3>
                       <p>{description}</p>
                     </Content>
+                    <TechStack>
+                        {techstack.map((tech, i) => (
+                          <li key={i}>{tech}</li>
+                        ))}
+                      </TechStack>
                   </Project>
                 </Card>
               </CardWrapper>

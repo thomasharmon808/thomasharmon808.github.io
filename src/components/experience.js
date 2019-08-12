@@ -8,7 +8,7 @@ import { media } from "@styles"
 
 const ExperienceContainer = styled.section`
   margin: 0 auto;
-  padding: 150px 0;
+  padding: 100px 0;
   max-width: 1000px;
   ${media.tablet`padding: 100px 0;`};
   position: relative;

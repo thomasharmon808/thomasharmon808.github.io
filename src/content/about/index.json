@@ -1,16 +1,19 @@
 {
-  "content": "Originally born and raised in Hawaii, [something something something] I have a unique perspective blah blah. Upon enrolling at Northeastern University, my soon-to-be alumnus, I found a passion for back-end software engineering. I especially enjoy machine learning and working with [technology stack].",
+  "content": "I'm a fifth year student at Northeastern University, currently applying for full time jobs starting in May of 2020. At Northeastern I found a passion for back-end software engineering and have gained invaluable real-world experience during numerous internships. I especially enjoy machine learning and working with modern technology stacks. I was originally born and raised in Hawaii, and during my co-ops I have found that it has given me a unique insight and perspective. One day I hope to retire there so I can focus on my passions of surfing and glassblowing.",
   "skills": [
     "C/C++",
     "Java",
     "JavaScript",
+    "Python",
     "HTML/CSS",
     "React",
     "NodeJS",
     "SQL",
-    "etc",
-    "etc",
-    "etc"
+    "Git",
+    "TensorFlow",
+    "Spring",
+    "JUnit",
+    "Jest"
   ],
   "avatar": "./headshot.JPG"
 }

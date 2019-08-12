@@ -41,7 +41,7 @@ const Subtitle = styled.h2`
 const Blurb = styled.div`
   margin-top: 25px;
   width: 50%;
-  max-width: 600px;
+  max-width: 800px;
   font-size: 1.2em;
 `
 

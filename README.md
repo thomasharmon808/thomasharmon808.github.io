@@ -98,11 +98,8 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## TODO:
 
-- add links to github repos for projects (memory allocator, shell, and animator)
-- add tech list for each project, fix project card heights
+- add links to github repos for projects (shell)
 - rewrite descriptions
 - add H icon
-- add glassblowing
 - Fonts + font sizes
 - add company logos + technologies used for each job
-- on hover for moon make it solid or hollow

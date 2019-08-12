@@ -50,6 +50,9 @@ const LayoutStyled = styled.div`
     };
 
     li {
+      ${({ theme }) =>
+        theme === "dark" ? `color: ${colors.lightSlate};` : `color: ${colors.navy};`
+      };
       &:before {
         ${({ theme }) =>
           theme === "dark" ? `color: ${colors.electricBlue};` : `color: ${colors.lightModeBlue};`
