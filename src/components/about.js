@@ -5,9 +5,7 @@ import Img from "gatsby-image"
 import sr from "@utils/sr"
 import { srConfig } from "@config"
 import { Heading } from "@components"
-import { theme, media } from "@styles"
-
-const { colors } = theme
+import { media } from "@styles"
 
 const AboutContainer = styled.section`
   margin: 0 auto;
@@ -27,13 +25,9 @@ const FlexContainer = styled.div`
 const ContentContainer = styled.div`
   width: 60%;
   max-width: 580px;
-  color: ${colors.lightSlate};
   font-size: 1.125em;
   ${media.tablet`margin-top: 3em;`};
   ${media.tablet`width: 100%;`};
-  a {
-    color: ${colors.electricBlue};
-  }
 `
 
 const SkillsContainer = styled.ul`
@@ -47,12 +41,10 @@ const Skill = styled.li`
   position: relative;
   margin-bottom: 10px;
   padding-left: 20px;
-  color: ${colors.lightSlate};
   &:before {
     content: "•";
     position: absolute;
     left: 0;
-    color: ${colors.electricBlue};
   }
 `
 

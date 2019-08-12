@@ -3,11 +3,8 @@ import styled from "styled-components"
 
 import { Github, Linkedin, Email, Spotify } from "@components/icons"
 
-import { theme } from "@styles"
 import { media } from "@utils"
 import { email, github, linkedin, spotify } from "@config"
-
-const { colors } = theme
 
 const HeroContainer = styled.section`
   margin: 0 auto;
@@ -25,7 +22,6 @@ const HeroContainer = styled.section`
 `
 
 const Title = styled.h1`
-  color: ${colors.electricBlue};
   margin: 0 0 20px 3px;
   font-weight: normal;
   font-size: 2.5em;
@@ -37,7 +33,6 @@ const Title = styled.h1`
 const Subtitle = styled.h2`
   line-height: 1.1;
   font-size: 1.5em;
-  color: ${colors.lightestSlate};
   ${media.giant`font-size: 2.3em;`};
   ${media.tablet`font-size: 2em;`};
   ${media.phablet`font-size: 1.9em;`};
@@ -48,7 +43,6 @@ const Blurb = styled.div`
   width: 50%;
   max-width: 600px;
   font-size: 1.2em;
-  color: ${colors.lightSlate};
 `
 
 const IconList = styled.ul`
@@ -63,7 +57,6 @@ const IconItem = styled.li`
 `
 
 const IconWrapper = styled.a`
-  color: ${colors.white};
   &:hover,
   &:focus {
     transform: translateY(-3px);
@@ -82,22 +75,22 @@ const Hero = ({ data }) => (
     <IconList>
       <IconItem key="1">
         <IconWrapper href={github} target="_blank">
-          <Github />
+          <Github className="icon"/>
         </IconWrapper>
       </IconItem>
       <IconItem key="2">
         <IconWrapper href={linkedin} target="_blank">
-          <Linkedin />
+          <Linkedin className="icon"/>
         </IconWrapper>
       </IconItem>
       <IconItem key="3">
         <IconWrapper href={`mailto:${email}`} target="_blank">
-          <Email />
+          <Email className="icon"/>
         </IconWrapper>
       </IconItem>
       <IconItem key="4">
         <IconWrapper href={spotify} target="_blank">
-          <Spotify />
+          <Spotify className="icon"/>
         </IconWrapper>
       </IconItem>
     </IconList>

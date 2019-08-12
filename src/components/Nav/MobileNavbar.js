@@ -2,7 +2,6 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 
 import NavLinks from './NavLinks';
-import NavSeparator from './NavSeparator';
 import NavButton from './NavButton';
 import LogoLink from './LogoLink';
 import DarkModeButton from './DarkModeButton';

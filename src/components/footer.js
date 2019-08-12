@@ -6,21 +6,26 @@ import { rem } from "@utils"
 
 const { colors } = theme
 
-const Wrapper = styled.div`
-  min-height: ${rem(50)};
+const Wrapper = styled.footer`
+  min-height: ${rem(40)};
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  background: ${colors.silver};
+  padding: 0.85rem;
+  ${({ theme }) =>
+    theme === "dark" ? `background: ${colors.silver};` : `background: ${colors.darkSlate};`
+    };
+    ${({ theme }) =>
+    theme === "dark" ? `color: ${colors.black};` : `color: ${colors.lightestSlate};`
+    };
 `
 
 const FooterLink = styled.a`
   color: currentColor;
   text-decoration: underline;
 `
-const Footer = () => (
-  <Wrapper>
+const Footer = ({ theme }) => (
+  <Wrapper theme={theme}>
     <p>
       Built by{" "}
       <FooterLink href="https://github.com/thomasharmon808">

@@ -24,11 +24,14 @@ const Wrapper = styled.nav`
   height: ${rem(navbarHeight)};
   font-size: ${rem(15)};
   font-weight: 500;
-  background: ${colors.metallicSeaweed};
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
   a {
     text-decoration: none;
   }
+
+  ${({ theme }) =>
+    theme === "dark" ? `background: ${colors.metallicSeaweed};` : `background: ${colors.lightModeBlue};`
+    };
 `
 
 const NormalNavbar = styled.div`
@@ -55,7 +58,7 @@ const EndWrapper = styled.div`
 const NavBar = props => {
   const { theme, toggleTheme } = useContext(DarkModeContext);
   return (
-    <Wrapper>
+    <Wrapper theme={theme}>
       <NormalNavbar>
         <StartWrapper>
           <LogoLink>{siteTitle}</LogoLink>

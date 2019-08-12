@@ -1,11 +1,14 @@
 const theme = {
   colors: {
+    black: "#000007",
     navy: "#0a192f",
     lightNavy: "#172a45",
+    darkGrey: "#1F2833",
     mediumGrey: "#2d3952",
     matteGrey: "#393F4D",
     grey: "#4c5772",
     lightGrey: "#606a86",
+    lightestGrey: "#C5C6C7",
     silver: "#D4D4DC",
     darkSlate: "#1D1E22",
     slate: "#8892b0",
@@ -13,31 +16,20 @@ const theme = {
     lightestSlate: "#ccd6f6",
     offWhite: "#dce7ff",
     white: "#e6f1ff",
+    snow: "#F7F7F7",
     yellow: "#FEDA6A",
     green: "#64ffda",
-    highlight: "rgba(41, 61, 90, 0.99)",
-    transGreen: "rgba(100, 255, 218, 0.07)",
-    transNavy: "rgba(10, 25, 47, 0.7)",
-    shadowNavy: "rgba(2, 12, 27, 0.7)",
 
     metallicSeaweed: "#077187",
     midnightGreen: "#074F57",
 
-    darkGreen: "#05231B",
+    lightModeBlue: "#3787F6",
+    lightModeHighlight: "#01C3FF",
+
     electricBlue: "#66FCF1",
     gunmetalGray: "#2C3531",
 
-    // sleek and futuristic
-    jungleGreen: "#0a3132",
-    genoaBlue: "#116466",
-    peachOrange: "#D9B08C",
-    tan: "#FFCB9A",
-    platinum: "#D1E8E2",
-    electricGreen: "#6CDBBB",
-
     // striking and simple
-    darkGrey: "#1F2833",
-    lightestGrey: "#C5C6C7",
     mudBlue: "#45A29E",
   },
 

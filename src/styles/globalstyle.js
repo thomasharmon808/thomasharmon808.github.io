@@ -42,7 +42,6 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5 {
     font-weight: 600;
-    color: ${colors.white};
   }
 
   #root {
@@ -70,7 +69,6 @@ const GlobalStyle = createGlobalStyle`
     display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
-    color: inherit;
     position: relative;
     cursor: pointer;
 

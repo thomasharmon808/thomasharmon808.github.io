@@ -43,9 +43,6 @@ const Card = styled.div`
   width: 100%;
   overflow: hidden;
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.15);
-  p {
-    color: ${colors.lightSlate};
-  }
 `
 
 const Project = styled.div`
@@ -57,7 +54,6 @@ const Project = styled.div`
   padding: 0.5rem 1.75rem 2rem 1.75rem;
   height: 100%;
   border-radius: ${theme.borderRadius};
-  background-color: ${colors.midnightGreen};
 `
 
 const Content = styled.div`
@@ -90,7 +86,7 @@ const Projects = ({ data }) => {
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                 >
-                  <Project>
+                  <Project className="proj">
                     <Content>
                       <h3>{name}</h3>
                       <p>{description}</p>
