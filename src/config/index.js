@@ -55,10 +55,10 @@ module.exports = {
     },
   ],
 
-  srConfig: (delay = 200) => ({
+  srConfig: (delay = 50) => ({
     origin: "bottom",
     distance: "15px",
-    duration: 350,
+    duration: 300,
     delay,
     rotate: { x: 0, y: 0, z: 0 },
     opacity: 0,

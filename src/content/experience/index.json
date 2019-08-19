@@ -5,7 +5,11 @@
       "title": "Software Engineer",
       "url": "https://w3.poweradvocate.com",
       "range": "July 2019 - Dec. 2019",
-      "details": ["point 1", "point 2", "point 3"]
+      "details": [
+        "Developed new features for front end applications using React and back-end systems using Spring MVC, Hibernate, J2EE, and SQL databases",
+        "Spearheaded the redesign of a J2EE monolithic web application into a Service Oriented Architecture. Lead the transition to a Star Schema, creating a 2-10x speedup of key customer features. Leveraged performance logging data to optimize the slowest SQL queries",
+        "Collaborated with other developers by pair programming. Practice Agile Development under a Continuous Flow framework"
+      ]
     },
     {
       "company": "RIVeR Labs",
