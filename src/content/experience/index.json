@@ -6,9 +6,10 @@
       "url": "https://w3.poweradvocate.com",
       "range": "July 2019 - Dec. 2019",
       "details": [
-        "Developed new features for front end applications using React and back-end systems using Spring MVC, Hibernate, J2EE, and SQL databases",
-        "Spearheaded the redesign of a J2EE monolithic web application into a Service Oriented Architecture. Lead the transition to a Star Schema, creating a 2-10x speedup of key customer features. Leveraged performance logging data to optimize the slowest SQL queries",
-        "Collaborated with other developers by pair programming. Practice Agile Development under a Continuous Flow framework"
+        "Full stack development of a SaaS application with React, NodeJS, and Java.",
+        "Orchestrated redesign of a J2EE monolithic web application into a Micro-Service Oriented Architecture and monetizable API.",
+        "Researched, implemented, and presented database optimizations for increasing performance of customer features by 5-30x.",
+        "Collaborated with other developers by pair programming. Practice Agile Development under a Continuous Flow framework."
       ]
     },
     {
@@ -17,9 +18,9 @@
       "url": "http://robot.neu.edu",
       "range": "Jan. 2018 - July 2018",
       "details": [
-        "Integrated open-source robotics libraries into a ROS framework using python, to develop facial recognition and person following modules",
-        "Competed in a RoboCup@Home competition in Montreal, Canada as part of a team of researchers. Placed 4th internationally",
-        "Researched optical flow and its applications into autonomous navigation, implementing multiple optical flow algorithms and testing their performance on real hardware"
+        "Developed facial recognition and person following packages using ROS, Python, and C++ for the Toyota HSR in a RoboCup@Home competition.",
+        "Competed in a RoboCup@Home competition in Montreal, Canada as part of a team of researchers. Placed 4th internationally.",
+        "Researched optical flow, implementing multiple algorithms and testing performance. Conceived of and built a prototype autonomous navigation system based on optical flow using ROS, Python, and OpenCV."
       ]
     },
     {
@@ -28,10 +29,10 @@
       "url": "https://www.draper.com",
       "range": "Jan. 2017 - July 2017",
       "details": [
-        "Created a custom back-end Java application to translate system engineering models from the modeling language OpenMETA to sysML",
-        "Built a graph database to support continuous integration of system engineering models to modernize the file-based approach in use",
-        "Created an interface to push and pull data using a RESTful API from the graph database and auto-generate a sysML model. Iterated on the design to incorporate live differencing of the model",
-        "Utilized ANSYS Electronic Desktop to model the effect of varying RF wavelengths on the operation of a simple PCB based on trace dimensions"
+        "Created a Java application to translate system engineering models between the modeling languages OpenMETA and sysML.",
+        "Designed a graph database to support continuous integration of system engineering models to modernize the file system approach in use.",
+        "Integrated database and Java app into a continuous integration workflow for engineering models, greatly improving engineering efficiency.",
+        "Utilized ANSYS Electronic Desktop to model operational effects of varying RF wavelengths on a PCB based on trace dimensions."
       ]
     }
   ]
