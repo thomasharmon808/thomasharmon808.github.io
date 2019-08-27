@@ -82,7 +82,7 @@ const Projects = ({ data }) => {
   useEffect(() => {
     sr.reveal(revealContainer.current, srConfig())
     revealProjects.current.forEach((ref, i) =>
-      sr.reveal(ref, srConfig(i * 100))
+      sr.reveal(ref, srConfig(i * 10))
     )
   }, [])
   return (

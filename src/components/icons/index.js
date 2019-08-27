@@ -9,6 +9,7 @@ import Email from './email';
 import Moon from './moon';
 import Spotify from './spotify';
 import Sun from './sun';
+import Harmon from './harmon';
 
 export {
   Email,
@@ -16,6 +17,7 @@ export {
   Fork,
   Github,
   Hamburger,
+  Harmon,
   Instagram,
   Linkedin,
   Twitter,
