@@ -17,7 +17,7 @@ export {
   Fork,
   Github,
   Hamburger,
-  Harmon,
+  // Harmon,
   Instagram,
   Linkedin,
   Twitter,

@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Harmon = () => (
+// const Harmon = () => (
 
-);
+// );
 
-export default Harmon;
+// export default Harmon;
