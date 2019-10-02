@@ -6,10 +6,11 @@
       "url": "https://w3.poweradvocate.com",
       "range": "July 2019 - Dec. 2019",
       "details": [
-        "Full stack development of a SaaS application with React, NodeJS, and Java.",
-        "Orchestrated redesign of a J2EE monolithic web application into a Micro-Service Oriented Architecture and monetizable API.",
-        "Researched, implemented, and presented database optimizations for increasing performance of customer features by 5-30x.",
-        "Collaborated with other developers by pair programming. Practice Agile Development under a Continuous Flow framework."
+        "Researched, implemented, and presented database optimizations that increased performance for clients by 5-30x",
+        "Contributed to redesign of a monolithic web application into a microservice-oriented architecture and monetizable API.",
+        "Developed NodeJS microservice allowing analysts to search by using Elasticsearch, increasing searching accuracy.",
+        "Practiced Agile Development under a Continuous Flow framework, collaborating with other developers by pair programming.",
+        "Created unit and integration tests using Jest to ensure reliability and resiliency of software."
       ]
     },
     {
@@ -18,9 +19,9 @@
       "url": "http://robot.neu.edu",
       "range": "Jan. 2018 - July 2018",
       "details": [
-        "Developed facial recognition and person following packages using ROS, Python, and C++ for the Toyota HSR in a RoboCup@Home competition.",
-        "Competed in a RoboCup@Home competition in Montreal, Canada as part of a team of researchers. Placed 4th internationally.",
-        "Researched optical flow, implementing multiple algorithms and testing performance. Conceived of and built a prototype autonomous navigation system based on optical flow using ROS, Python, and OpenCV."
+        "Developed facial recognition and person following packages for the Toyota HSR in a RoboCup@Home competition.",
+        "Placed 4th internationally in a RoboCup@Home competition in Montreal, Canada as part of a team of 6 researchers.",
+        "Researched, built, and tested a prototype autonomous navigation system based on optical flow."
       ]
     },
     {
@@ -29,9 +30,9 @@
       "url": "https://www.draper.com",
       "range": "Jan. 2017 - July 2017",
       "details": [
-        "Created a Java application to translate system engineering models between the modeling languages OpenMETA and sysML.",
-        "Designed a graph database to support continuous integration of system engineering models to modernize the file system approach in use.",
-        "Integrated database and Java app into a continuous integration workflow for engineering models, greatly improving engineering efficiency.",
+        "Created a Java application to translate system engineering models between OpenMETA and sysML.",
+        "Modernized existing file system approach by utilizing a graph database as a single source of truth for system engineering models.",
+        "Integrated database and Java app into continuous integration workflow for engineering models, greatly improving efficiency.",
         "Utilized ANSYS Electronic Desktop to model operational effects of varying RF wavelengths on a PCB based on trace dimensions."
       ]
     }
