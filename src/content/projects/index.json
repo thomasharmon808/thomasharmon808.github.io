@@ -1,6 +1,18 @@
 {
   "projects": [
     {
+      "name": "LiquidML - Rust",
+      "url": "https://github.com/thomasharmon808/liquid-ml",
+      "description": "A platform for distributed, scalable data analysis for data sets that are too large to fit into memory. It aims to be simple to use, allowing users to easily perform map or filter operations. Comes with examples of machine learning algorithms such as decision trees and random forests.",
+      "techstack": ["Rust"]
+    },
+    {
+      "name": "Sorer - Rust",
+      "url": "https://github.com/samedh/sorer",
+      "description": "A high performance, multi-threaded CSV file parser that can handle conflicting data types due to inferring a schema on read with a probablistic algorithm.",
+      "techstack": ["Rust"]
+    },
+    {
       "name": "GShell - Rust",
       "url": "https://github.com/thomasharmon808/gshell",
       "description": "A redevelopment of the original shell project, but in Rust in order to learn a new programming language that I found very cool. Support for all shell operations and currently implementing user friendly operations such as tab autocomplete and command history.",
@@ -11,12 +23,6 @@
       "url": "https://github.com/thomasharmon808/thomasharmon808.github.io/tree/dev",
       "description": "A personal first foray into the realm of web development in order to build this website to host my personal projects and professional website. Built with Gatsby and React for a blazing fast experience.",
       "techstack": ["React", "JavaScript", "CSS", "Gatsby"]
-    },
-    {
-      "name": "Touchless User Interface",
-      "url": "https://github.com/thomasharmon808/capstone",
-      "description": "A year long, team capstone project to build a computer-vision based touchless user interface with a monocular RGB camera and machine learning. Allows for static or dynamic gestures to be trained on demand and linked to a repository of IoT actions and applications.",
-      "techstack": ["Python", "AWS", "Machine Learning"]
     },
     {
       "name": "ML Futures Volume Prediction",
@@ -41,12 +47,6 @@
       "url": "https://github.com/thomasharmon808/nush",
       "description": "A basic Unix shell implementation with support for command line operations such as redirects, piping, background operations, && and || operations, and the ; operation.",
       "techstack": ["C"]
-    },
-    {
-      "name": "Animator",
-      "url": "https://github.com/thomasharmon808/animator",
-      "description": "A project focused on OOD principles and practices, specfically the MVC pattern. The goal of this project was to design an interactive animator application that was modular and easily extensible. Throughout the project, different views and controllers were designed to demonstrate these principles.",
-      "techstack": ["Java", "MVC"]
     },
     {
       "name": "Glassblowing",
