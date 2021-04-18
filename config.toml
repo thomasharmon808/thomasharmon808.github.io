@@ -1,0 +1,87 @@
+baseurl      = "localhost"
+title        = "GoodSyntax"
+languageCode = "en-us"
+theme        = "hello-friend-ng"
+paginate     = 5
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "Musings and Work of a Rust Developer"
+
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+
+  # Metadata mostly used in document's head
+  description = "Musings and Work of a Rust Developer"
+  keywords = "rust, blog, developer, dev, cs, swe, se, backend, systems"
+  images = [""]
+
+  [params.portrait]
+    path     = "/img/tom.png"
+    alt      = "My Self-Portrait"
+    maxWidth = "80px"
+
+  [params.logo]
+    logoMark = "λ"
+    logoText = "segfault"
+    logoHomeLink = "/"
+    logoCursorColor = "#f74c00"
+    logoCursorAnimate = "2.5s"
+
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:tom@harmon.tech"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/goodSyntax808"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/tharmony"
+
+  [[params.social]]
+    name = "spotify"
+    url  = "https://open.spotify.com/user/1251807662?si=owPSoIB3TcmECePho4fSSw"
+
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/thomasharmon808"
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+  [languages.en]
+    title = "GoodSyntax"
+    subtitle = "Musings and Work of a Rust Developer"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/blog"
+  [[menu.main]]
+    identifier = "resume"
+    name       = "Resume"
+    url        = "/harmon_resume.pdf"
+
