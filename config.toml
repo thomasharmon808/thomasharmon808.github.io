@@ -20,6 +20,8 @@ paginate     = 5
   # Enable sharing buttons, if you like
   enableSharingButtons = true
 
+  enableThemeToggle = true
+
   # Metadata mostly used in document's head
   description = "Musings and Work of a Rust Developer"
   keywords = "rust, blog, developer, dev, cs, swe, se, backend, systems"
